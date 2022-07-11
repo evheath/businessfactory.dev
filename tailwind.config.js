@@ -10,7 +10,12 @@ module.exports = {
       },
       keyframes: {
         "spin-ccw": {
-          to: { transform: "rotate(-360deg)" }
+          to: { transform: "rotate(-360deg)" },
+          from: { transform: "rotate(0deg)" }
+        },
+        "spin": {
+          to: { transform: "rotate(360deg)" },
+          from: { transform: "rotate(0deg)" }
         },
         bounce: {
           "50%": {

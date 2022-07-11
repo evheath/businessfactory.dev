@@ -1,6 +1,6 @@
 # To Do
 
-- [ ] Deploy to vercel
+- [x] Deploy to vercel
 - [ ] Style blog list
 - [ ] Finish first blog post
 - [ ] Create landing page
