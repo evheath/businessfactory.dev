@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (<>
     <Head>
       {/* the favicon */}
-      <link rel="icon" href="/stacks.svg" />
+      <link rel="icon" href="/favicon.ico" />
     </Head>
     <Container className="min-h-screen">
       <Header />
