@@ -19,8 +19,10 @@ interface PostMetaData {
   date: string;
   title: string;
   slug: string;
-  author: string;
   description: string;
+  author: string;
+  authorImgUrl: string;
+  heroImgUrl: string;
 }
 
 function getMatterResult(slug: string) {

@@ -1,12 +1,14 @@
 # To Do
 
-- [x] Deploy to vercel
+- [ ] Include hero image on the slug page
+- [ ] Breadcrumbs
 - [ ] Style blog list
-- [ ] Finish first blog post
 - [ ] Create landing page
+- [ ] Finish first blog post
 - [ ] Implement contact me functionality
 - [ ] Gradients/curves for background
-- [x] Verify fonts
 - [ ] robots.txt
 - [ ] site map
 - [ ] any SEO considerations
+- [x] Deploy to vercel
+- [x] Verify fonts
