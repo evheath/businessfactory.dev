@@ -2,7 +2,6 @@ import { InferGetStaticPropsType } from 'next'
 import { getAllPostsMetaData } from '@/utils/posts';
 import Link from 'next/link'
 import Image from 'next/future/image';
-
 export default function BlogListPage(
   { allPostsMetaData }: InferGetStaticPropsType<typeof getStaticProps>
 ) {
