@@ -2,6 +2,7 @@ import Markdown from '@/components/Markdown';
 import Head from 'next/head'
 import { getAllPostSlugs, getPostContent, getPostMetaData } from '@/utils/posts';
 import { GetStaticPaths, GetStaticPropsContext, InferGetStaticPropsType } from 'next';
+import Image from 'next/future/image';
 export default function BlogPostPage(
   { content, metaData }: InferGetStaticPropsType<typeof getStaticProps>
 ) {
@@ -82,20 +83,19 @@ export default function BlogPostPage(
           </div>
         </div>
         <div className="relative px-4 sm:px-6 lg:px-8">
-          <div className="text-lg max-w-prose mx-auto">
-            <div className='flex justify-between p-3 items-center'>
-              <span className="block text-base text-indigo-600 font-semibold tracking-wide">
-                {author}
-              </span>
 
+          <div className="mt-6 mx-auto  max-w-3xl flex flex-col space-y-2" >
+            <h1 className='text-center font-serif font-black text-6xl'>{title}</h1>
+            <div className='flex justify-between space-x-4 items-center'>
+              <div className="text-base text-indigo-600 font-semibold tracking-wide flex items-center space-x-4 ">
+                <Image className='h-10 w-10 rounded-full' src={metaData.authorImgUrl} alt={metaData.author} />
+                <p>{author}</p>
+              </div>
               <p>{date}</p>
             </div>
+            <Image className='w-full rounded-xl' src={metaData.heroImgUrl} alt={metaData.title} priority={true} />
           </div>
-
-          <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto space-y-8 flex flex-col">
-            <h1 className='text-center font-serif font-black'>{title}</h1>
-            <Markdown>{content}</Markdown>
-          </div>
+          <Markdown className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto space-y-8 flex flex-col">{content}</Markdown>
         </div>
       </div>
     </>
