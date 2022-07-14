@@ -4,8 +4,9 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
-import { AnimatedLogo } from '@/components/AnimatedLogo'
 import { NavLink } from '@/components/NavLink'
+import { Logo } from './Logo'
+import Brand from './Brand'
 
 /**
  * The popover menu (for mobile)
@@ -108,8 +109,10 @@ export function Header() {
       {/* <Container> */}
       <nav className="relative z-50 flex justify-between">
         <div className="flex items-center md:gap-x-12">
-          <Link href="/" aria-label="Home">
-            <AnimatedLogo className="h-10 w-auto" />
+          <Link className="group flex flex-col items-center" href="/" aria-label="Home">
+            {/* <AnimatedLogo className="h-10 w-auto" /> */}
+            <Logo />
+            <Brand className="mt-1" />
           </Link>
           <div className="hidden md:flex md:gap-x-6 hover:scale-125">
             {/* <NavLink href="#features">Features</NavLink> */}
