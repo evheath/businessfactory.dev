@@ -1,6 +1,8 @@
-export const Logo = ({ fill = "#6366F1" }: { fill?: string }) => {
+import clsx from "clsx"
+
+export const Logo = ({ fill = "#6366F1", className }: { fill?: string, className?: string }) => {
   return (
-    <svg className='group-hover:animate-bounce' width="77" height="76" viewBox="0 0 77 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={clsx(className, "group-hover:animate-bounce")} width="77" height="76" viewBox="0 0 77 76" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g id="Logo">
         <g id="phone">
           <rect id="phone-bg" y="32" width="75" height="44" rx="7" fill={fill} />

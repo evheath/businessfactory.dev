@@ -91,11 +91,7 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
-            {/* <MobileNavLink href="#features">Features</MobileNavLink> */}
-            {/* <MobileNavLink href="#testimonials">Testimonials</MobileNavLink> */}
             <MobileNavLink href="/blog">Blog</MobileNavLink>
-            {/* <hr className="m-2 border-slate-300/40" /> */}
-            {/* <MobileNavLink href="/login">Sign in</MobileNavLink> */}
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -106,24 +102,17 @@ function MobileNavigation() {
 export function Header() {
   return (
     <header className="py-10">
-      {/* <Container> */}
       <nav className="relative z-50 flex justify-between">
         <div className="flex items-center md:gap-x-12">
-          <Link className="group flex flex-col items-center" href="/" aria-label="Home">
-            {/* <AnimatedLogo className="h-10 w-auto" /> */}
-            <Logo />
-            <Brand className="mt-1" />
+          <Link className="group flex flex-col md:flex-row items-center h-24" href="/" aria-label="Home">
+            <Logo className='md:h-full' />
+            <Brand className="mt-1 md:h-12 md:ml-2" />
           </Link>
           <div className="hidden md:flex md:gap-x-6 hover:scale-125">
-            {/* <NavLink href="#features">Features</NavLink> */}
-            {/* <NavLink href="#testimonials">Testimonials</NavLink> */}
             <NavLink href="/blog">Blog</NavLink>
           </div>
         </div>
         <div className="flex items-center gap-x-5 md:gap-x-8">
-          {/* <div className="hidden md:block">
-            <NavLink href="/login">Sign in</NavLink>
-          </div> */}
           <Button href="/contact" color="indigo">
             <span>
               Contact me
@@ -134,7 +123,6 @@ export function Header() {
           </div>
         </div>
       </nav>
-      {/* </Container> */}
     </header>
   )
 }
