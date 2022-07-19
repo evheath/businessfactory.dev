@@ -13,11 +13,11 @@ function MyApp({ Component, pageProps }: AppProps) {
       {/* the favicon */}
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Container className="min-h-screen">
+    <Container >
       <Header />
       {/* <Breadcrumb /> */}
-      <Component {...pageProps} />
     </Container>
+    <Component {...pageProps} />
     <Footer />
   </>);
 }
