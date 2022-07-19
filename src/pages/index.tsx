@@ -31,7 +31,7 @@ const Home: NextPage = () => {
                   <Image
                     className="w-full"
                     src={`/lucid/right/1.svg`} priority={true} />
-                  <Link className="text-gray-300" href="https://lucid.pixsellz.io/">SVGs by Lucid </Link>
+                  <Link target={"_blank"} className="text-gray-300" href="https://lucid.pixsellz.io/">SVGs by pixsellz</Link>
 
                 </div>
               </div>
