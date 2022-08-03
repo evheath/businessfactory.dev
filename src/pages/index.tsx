@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import GetItBuilt from "@/components/GetItBuilt";
 import CustomTailored from "@/components/CustomTailored";
+import GetALegUp from "@/components/GetALegUp";
 
 const Home: NextPage = () => {
 
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
           <div className="mx-auto max-w-7xl lg:px-8">
             <GetItBuilt />
             <CustomTailored />
+            <GetALegUp />
           </div>
         </div>
 
