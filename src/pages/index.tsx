@@ -12,12 +12,10 @@ const Home: NextPage = () => {
         <title>Business Factory</title>
       </Head>
       <main>
-        <div className="pt-10 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
-          <div className="mx-auto max-w-7xl lg:px-8">
-            <GetItBuilt />
-            <CustomTailored />
-            <GetALegUp />
-          </div>
+        <div className="pt-5 mx-auto max-w-[110rem]  lg:px-8">
+          <GetItBuilt />
+          <CustomTailored />
+          <GetALegUp />
         </div>
 
       </main>
