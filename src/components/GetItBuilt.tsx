@@ -8,10 +8,10 @@ export default function GetItBuilt({ }) {
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-2xl sm:px-6 lg:px-0 lg:text-left lg:flex lg:items-center">
           <div className="lg:py-24">
             <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-black sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-              <span className="block">Need an app?</span>
+              <span className="block text-white">Need an app?</span>
               <span className="block text-indigo-500">Get it built</span>
             </h1>
-            <p className="mt-3 text-base text-gray-900 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+            <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
               Web, mobile, you name it we build it. Step into the one-stop-shop to turn <span className='font-bold'>your</span> idea into a <span className="italic">real</span> app.
             </p>
 
@@ -22,7 +22,7 @@ export default function GetItBuilt({ }) {
             <Image
               className="w-full"
               src={`/lucid/right/1.svg`} priority={true} />
-            <Link target={"_blank"} className="text-gray-300" href="https://lucid.pixsellz.io/">SVGs by pixsellz</Link>
+            <Link target={"_blank"} className="text-zinc-700" href="https://lucid.pixsellz.io/">SVGs by pixsellz</Link>
 
           </div>
         </div>

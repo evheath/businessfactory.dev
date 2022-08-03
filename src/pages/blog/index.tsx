@@ -8,10 +8,10 @@ export default function BlogListPage(
   return (
     <>
       {/* <h1>Welcome to the Blog</h1> */}
-      <div className="my-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+      <div className="my-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-7xl">
         {allPostsMetaData.map((post, index) => {
           return (
-            <Link href={`/blog/${post.slug}`} key={post.slug} className="flex flex-col rounded-lg shadow-lg overflow-hidden hover:-translate-y-1">
+            <Link href={`/blog/${post.slug}`} key={post.slug} className="border flex flex-col rounded-lg shadow-lg overflow-hidden hover:-translate-y-1">
               <div className="flex-shrink-0">
                 <Image
                   className="h-48 w-full object-cover"
@@ -20,9 +20,9 @@ export default function BlogListPage(
                   priority={index < 3} // first three images should not be lazy loaded
                 />
               </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div className="flex-1 p-6 flex flex-col justify-between">
                 <div className="flex-1">
-                  <p className="text-xl font-semibold text-gray-900">{post.title}</p>
+                  <p className="text-xl font-semibold text-white">{post.title}</p>
                   <p className="mt-3 text-base text-gray-500">{post.description}</p>
                 </div>
                 <div className="mt-6 flex items-center">
@@ -30,10 +30,10 @@ export default function BlogListPage(
                     <Image className="h-10 w-10 rounded-full" src={post.authorImgUrl} alt={post.author} />
                   </div>
                   <div className="ml-3">
-                    <p className="text-sm font-medium text-gray-900">
+                    <p className="text-sm font-medium text-gray-500">
                       {post.author}
                     </p>
-                    <div className="flex space-x-1 text-sm text-gray-500">
+                    <div className="flex space-x-1 text-sm text-gray-700">
                       <time>{post.date}</time>
                     </div>
                   </div>

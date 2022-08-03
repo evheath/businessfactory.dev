@@ -10,20 +10,19 @@ export default function CustomTailored({ }) {
             <Image
               className="w-full"
               src={`/lucid/left/9.svg`} priority={true} />
-            <Link target={"_blank"} className="text-gray-300" href="https://lucid.pixsellz.io/">SVGs by pixsellz</Link>
 
           </div>
         </div>
         <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
           <div className="lg:py-24">
-            <p className="mt-3 text-base text-gray-900 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+            <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
               Nobody understands your workflow better than you. Which is why you need an app
             </p>
             <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-black sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
               <span className="block text-indigo-500">Custom tailored</span>
-              <span className="block">For your business</span>
+              <span className="block text-white">For your business</span>
             </h1>
-            <p className="mt-3 text-base text-gray-900 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+            <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
               Why use a cookie-cutter app that wasn't built with your business in mind when you can...
             </p>
 
