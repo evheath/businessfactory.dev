@@ -9,7 +9,13 @@ export default function Stars({ }) {
       shadow += `${Math.random() * width}px ${Math.random() * height}px #fff, `;
     }
     let stars = shadow.slice(0, shadow.length - 2);
-    setStyleObj({ boxShadow: `${stars}` });
+    setStyleObj({
+      boxShadow: `${stars}`,
+      width: '1px',
+      height: '1px',
+      position: 'fixed',
+      zIndex: -1,
+    });
   }
 
   // useEffect does not run on server-side rendering, 
