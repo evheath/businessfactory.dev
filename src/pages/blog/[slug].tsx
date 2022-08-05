@@ -27,7 +27,7 @@ export default function BlogPostPage(
             </div>
             <Image className='w-full rounded-xl' src={metaData.heroImgUrl} alt={metaData.title} priority={true} />
           </div>
-          <Markdown className="mt-6 prose prose-indigo prose-code:text-purple-500 prose-lg text-gray-500 mx-auto space-y-8 flex flex-col">{content}</Markdown>
+          <Markdown className="bg-black mt-6 prose prose-indigo prose-code:text-purple-500 prose-lg text-gray-500 mx-auto space-y-8 flex flex-col">{content}</Markdown>
         </div>
       </div>
     </>
