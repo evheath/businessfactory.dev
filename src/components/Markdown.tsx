@@ -84,7 +84,7 @@ export default function Markdown({ ...props }) {
                     alt={alt as string}
                     className={clsx(className, "rounded-xl")}
                   />
-                  <figcaption className='italic' >{alt}</figcaption>
+                  <figcaption>{alt}</figcaption>
                 </figure>
               </>
             )
