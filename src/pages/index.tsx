@@ -3,6 +3,7 @@ import Head from "next/head";
 import GetItBuilt from "@/components/GetItBuilt";
 import CustomTailored from "@/components/CustomTailored";
 import GetALegUp from "@/components/GetALegUp";
+import RevenueStreams from "@/components/RevenueStreams";
 
 const Home: NextPage = () => {
 
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
           <GetItBuilt />
           <CustomTailored />
           <GetALegUp />
+          <RevenueStreams/>
         </div>
 
       </main>
