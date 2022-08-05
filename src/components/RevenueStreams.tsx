@@ -26,7 +26,14 @@ export default function RevenueStreams({ }) {
 
           </div>
         </div>
+        <div className="block lg:hidden lg:m-0">
+          <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 flex flex-col items-center">
+            <Image
+              className="w-full"
+              src={`/lucid/right/16.svg`} priority={true} />
 
+          </div>
+        </div>
       </div>
     </>
   )
