@@ -42,9 +42,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     const message = errors.map(error => error.message).join('\n')
     alert(message)
   }
-  console.log(result);
 
-  // alert(`Is this your full name: ${result.name}`)
 
 }
 export default function ContactPage() {
