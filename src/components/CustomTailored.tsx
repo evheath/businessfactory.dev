@@ -8,7 +8,7 @@ export default function CustomTailored({ }) {
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 flex flex-col items-center">
             <Image
               className="w-full"
-              src={`/lucid/left/9.svg`} priority={true} />
+              src={`/lucid/left/9.svg`} />
 
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function CustomTailored({ }) {
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 flex flex-col items-center">
             <Image
               className="w-full"
-              src={`/lucid/right/9.svg`} priority={true} />
+              src={`/lucid/right/9.svg`} />
 
           </div>
         </div>

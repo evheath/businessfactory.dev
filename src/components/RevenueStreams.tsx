@@ -8,7 +8,7 @@ export default function RevenueStreams({ }) {
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 flex flex-col items-center">
             <Image
               className="w-full"
-              src={`/lucid/left/16.svg`} priority={true} />
+              src={`/lucid/left/16.svg`} />
 
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function RevenueStreams({ }) {
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 flex flex-col items-center">
             <Image
               className="w-full"
-              src={`/lucid/right/16.svg`} priority={true} />
+              src={`/lucid/right/16.svg`} />
 
           </div>
         </div>

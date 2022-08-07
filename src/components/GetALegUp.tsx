@@ -21,7 +21,7 @@ export default function GetALegUp({ }) {
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 flex flex-col items-center">
             <Image
               className="w-full"
-              src={`/lucid/right/4.svg`} priority={true} />
+              src={`/lucid/right/4.svg`} />
 
           </div>
         </div>

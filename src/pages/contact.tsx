@@ -9,7 +9,8 @@ export default function ContactPage() {
         <div className="flex justify-center lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:max-h-[944px]">
           <Image className="h-32 w-full max-w-[530px] object-cover lg:max-w-full lg:absolute lg:h-full rounded-xl"
             src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
-            alt="" />
+            alt=""
+            priority={true} />
         </div>
       </div>
       <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-8 lg:grid lg:grid-cols-2">
