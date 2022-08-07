@@ -1,47 +1,54 @@
 import { Button } from "@/components/Button";
 import Image from 'next/future/image'
 import { FormEvent } from "react";
+import { ZodIssue } from "zod";
+const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  // https://nextjs.org/docs/guides/building-forms
 
-export default function ContactPage() {
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    // Stop the form from submitting and refreshing the page.
-    event.preventDefault()
+  // Stop the form from submitting and refreshing the page.
+  event.preventDefault()
 
-    // Get data from the form.
-    const form = event.target as HTMLFormElement
-    const formData = new FormData(form)
-    const data = Object.fromEntries(formData)
-    console.log(data);
+  // Get data from the form.
+  const form = event.target as HTMLFormElement
+  const formData = new FormData(form)
+  const data = Object.fromEntries(formData)
 
-    // Send the data to the server in JSON format.
-    const JSONdata = JSON.stringify(data)
+  // Send the data to the server in JSON format.
+  const JSONdata = JSON.stringify(data)
 
-    // API endpoint where we send form data.
-    const endpoint = '/api/contact'
+  // API endpoint where we send form data.
+  const endpoint = '/api/contact'
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: 'POST',
-      // Tell the server we're sending JSON.
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    }
-
-    // Send the form data to our forms API on Vercel and get a response.
-    const response = await fetch(endpoint, options)
-
-    // Get the response data from server as JSON.
-    // If server returns the name submitted, that means the form works.
-    const result = await response.json()
-    console.log(result);
-
-    // alert(`Is this your full name: ${result.name}`)
-
+  // Form the request for sending data to the server.
+  const options = {
+    // The method is POST because we are sending data.
+    method: 'POST',
+    // Tell the server we're sending JSON.
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    // Body of the request is the JSON data we created above.
+    body: JSONdata,
   }
+
+  // Send the form data to our forms API on Vercel and get a response.
+  const response = await fetch(endpoint, options)
+
+  // Get the response data from server as JSON.
+  // If server returns the name submitted, that means the form works.
+  const result = await response.json()
+  if (result.errors) {
+    const errors = result.errors as ZodIssue[]
+    const message = errors.map(error => error.message).join('\n')
+    alert(message)
+  }
+  console.log(result);
+
+  // alert(`Is this your full name: ${result.name}`)
+
+}
+export default function ContactPage() {
+
 
   return (
     <div className="relative">
@@ -154,9 +161,10 @@ export default function ContactPage() {
                 <div className="mt-4 grid grid-cols-1 gap-y-4">
                   <div className="flex items-center">
                     <input
+                      required
                       id="budget-unknown"
                       name="budget"
-                      defaultValue="under_50k"
+                      value="unknown"
                       type="radio"
                       className="focus:ring-indigo-500 h-4 w-4 text-indigo-500 border-gray-300"
                     />
@@ -166,9 +174,10 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center">
                     <input
+                      required
                       id="budget-under-50k"
                       name="budget"
-                      defaultValue="under_50k"
+                      value="under 50k"
                       type="radio"
                       className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                     />
@@ -178,9 +187,10 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center">
                     <input
+                      required
                       id="budget-50k-100k"
                       name="budget"
-                      defaultValue="50k-100k"
+                      value="50k-100k"
                       type="radio"
                       className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                     />
@@ -190,9 +200,10 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center">
                     <input
+                      required
                       id="budget-over-100k"
                       name="budget"
-                      defaultValue="over_100k"
+                      value="100k+"
                       type="radio"
                       className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                     />

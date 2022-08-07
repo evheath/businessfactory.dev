@@ -1,17 +1,13 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { z } from "zod";
 
-type Data = {
-  name: string
-}
 
 export default function (req: NextApiRequest, res: NextApiResponse) {
-  console.log("api/contact hit", req.body);
 
 
 
 
-  const data = z
+  const zodParse = z
     .object({
       name: z.string().min(1, { message: 'Name is required' }),
       email: z.string().email({ message: 'Invalid email format' }),
@@ -19,16 +15,15 @@ export default function (req: NextApiRequest, res: NextApiResponse) {
       phone: z.string().nullish(),
       company: z.string().nullish(),
       howDidYouHearAboutUs: z.string().nullish(),
+      budget: z.string().min(1, { message: 'Budget is required' }),
     })
     .safeParse(req.body);
 
-  if (!data.success) {
-    console.log(data.error.issues);
-    // const errorRes: Data =
+  if (!zodParse.success) {
     res.status(400).json({
-      errors: data.error.issues,
+      errors: zodParse.error.issues,
     });
-
+  } else {
+    res.status(200).json({ name: zodParse.data.name });
   }
-  res.status(200);
 }
