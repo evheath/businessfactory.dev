@@ -18,7 +18,7 @@ export default function RevenueStreams({ }) {
               <span className="block text-white">Open new revenue streams</span>
             </h1>
             <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              E-commerce, micro-transactions, one-time purchases, subscriptions, gift-cards, invoices and more.
+              Through e-commerce, micro-transactions, one-time purchases, subscriptions, gift-cards, invoices and more.
             </p>
             <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
               When you own your own app, the possibilities are endless.

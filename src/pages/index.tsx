@@ -4,6 +4,7 @@ import GetItBuilt from "@/components/GetItBuilt";
 import CustomTailored from "@/components/CustomTailored";
 import GetALegUp from "@/components/GetALegUp";
 import RevenueStreams from "@/components/RevenueStreams";
+import DesignCodeShip from "@/components/DesignCodeShip";
 
 const Home: NextPage = () => {
 
@@ -17,7 +18,8 @@ const Home: NextPage = () => {
           <GetItBuilt />
           <CustomTailored />
           <GetALegUp />
-          <RevenueStreams/>
+          <RevenueStreams />
+          <DesignCodeShip />
         </div>
 
       </main>
