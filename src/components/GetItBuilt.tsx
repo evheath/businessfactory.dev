@@ -21,7 +21,8 @@ export default function GetItBuilt({ }) {
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 flex flex-col items-center">
             <Image
               className="w-full"
-              src={`/lucid/right/1.svg`} priority={true} />
+              src={`/lucid/right/1.svg`} priority={true}
+              alt="Lucid SVG" />
             <Link target={"_blank"} className="text-zinc-700" href="https://lucid.pixsellz.io/">SVGs by pixsellz</Link>
 
           </div>

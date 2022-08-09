@@ -2,51 +2,51 @@ import { Button } from "@/components/Button";
 import Image from 'next/future/image'
 import { FormEvent } from "react";
 import { ZodIssue } from "zod";
-const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-  // https://nextjs.org/docs/guides/building-forms
 
-  // Stop the form from submitting and refreshing the page.
-  event.preventDefault()
-
-  // Get data from the form.
-  const form = event.target as HTMLFormElement
-  const formData = new FormData(form)
-  const data = Object.fromEntries(formData)
-
-  // Send the data to the server in JSON format.
-  const JSONdata = JSON.stringify(data)
-
-  // API endpoint where we send form data.
-  const endpoint = '/api/contact'
-
-  // Form the request for sending data to the server.
-  const options = {
-    // The method is POST because we are sending data.
-    method: 'POST',
-    // Tell the server we're sending JSON.
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    // Body of the request is the JSON data we created above.
-    body: JSONdata,
-  }
-
-  // Send the form data to our forms API on Vercel and get a response.
-  const response = await fetch(endpoint, options)
-
-  // Get the response data from server as JSON.
-  // If server returns the name submitted, that means the form works.
-  const result = await response.json()
-  if (result.errors) {
-    const errors = result.errors as ZodIssue[]
-    const message = errors.map(error => error.message).join('\n')
-    alert(message)
-  }
-
-
-}
 export default function ContactPage() {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    // https://nextjs.org/docs/guides/building-forms
 
+    // Stop the form from submitting and refreshing the page.
+    event.preventDefault()
+
+    // Get data from the form.
+    const form = event.target as HTMLFormElement
+    const formData = new FormData(form)
+    const data = Object.fromEntries(formData)
+
+    // Send the data to the server in JSON format.
+    const JSONdata = JSON.stringify(data)
+
+    // API endpoint where we send form data.
+    const endpoint = '/api/contact'
+
+    // Form the request for sending data to the server.
+    const options = {
+      // The method is POST because we are sending data.
+      method: 'POST',
+      // Tell the server we're sending JSON.
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      // Body of the request is the JSON data we created above.
+      body: JSONdata,
+    }
+
+    // Send the form data to our forms API on Vercel and get a response.
+    const response = await fetch(endpoint, options)
+
+    // Get the response data from server as JSON.
+    // If server returns the name submitted, that means the form works.
+    const result = await response.json()
+    if (result.errors) {
+      const errors = result.errors as ZodIssue[]
+      const message = errors.map(error => error.message).join('\n')
+      alert(message)
+    }
+
+
+  }
 
   return (
     <div className="relative">

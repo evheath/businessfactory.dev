@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { z } from "zod";
 
 
-export default function (req: NextApiRequest, res: NextApiResponse) {
+export default function contactAPI(req: NextApiRequest, res: NextApiResponse) {
 
 
 

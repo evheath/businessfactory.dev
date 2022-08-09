@@ -8,8 +8,8 @@ export default function CustomTailored({ }) {
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 flex flex-col items-center">
             <Image
               className="w-full"
-              src={`/lucid/left/9.svg`} />
-
+              src={`/lucid/left/9.svg`}
+              alt="Lucid SVG" />
           </div>
         </div>
         <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 text-center lg:px-0 lg:text-left lg:flex lg:items-center">
@@ -22,7 +22,7 @@ export default function CustomTailored({ }) {
               <span className="block text-white">For your business</span>
             </h1>
             <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              Why use a cookie-cutter app that wasn't built with your business in mind when you can...
+              Why use a cookie-cutter app that wasn&apos;t built with your business in mind when you can...
             </p>
 
           </div>
@@ -31,7 +31,8 @@ export default function CustomTailored({ }) {
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 flex flex-col items-center">
             <Image
               className="w-full"
-              src={`/lucid/right/9.svg`} />
+              src={`/lucid/right/9.svg`}
+              alt="Lucid SVG" />
 
           </div>
         </div>
