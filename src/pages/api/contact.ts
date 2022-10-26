@@ -2,7 +2,10 @@ import { sendEmail } from "@/utils/smtp";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { z } from "zod";
 
-export default function contactAPI(req: NextApiRequest, res: NextApiResponse) {
+export default async function contactAPI(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const zodParse = z
     .object({
       name: z.string().min(1, { message: "Name is required" }),
@@ -25,7 +28,7 @@ export default function contactAPI(req: NextApiRequest, res: NextApiResponse) {
     });
     return;
   }
-  sendEmail({
+  await sendEmail({
     to: "elliot@businessfactory.dev",
     subject: "New contact form submission",
     text: JSON.stringify(zodParse.data, null, 2),
