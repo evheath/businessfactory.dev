@@ -6,6 +6,7 @@ specifiers:
   '@tailwindcss/forms': ^0.5.2
   '@tailwindcss/typography': ^0.5.2
   '@types/node': 18.0.0
+  '@types/nodemailer': ^6.4.6
   '@types/react': 18.0.14
   '@types/react-dom': 18.0.5
   '@types/react-syntax-highlighter': ^15.5.2
@@ -16,6 +17,7 @@ specifiers:
   focus-visible: ^5.2.0
   gray-matter: ^4.0.3
   next: 12.2.0
+  nodemailer: ^6.8.0
   postcss: ^8.4.14
   postcss-focus-visible: ^6.0.4
   react: 18.2.0
@@ -35,6 +37,7 @@ dependencies:
   focus-visible: 5.2.0
   gray-matter: 4.0.3
   next: 12.2.0_biqbaboplfbrettd7655fr4n2y
+  nodemailer: 6.8.0
   postcss-focus-visible: 6.0.4_postcss@8.4.14
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -44,6 +47,7 @@ dependencies:
 
 devDependencies:
   '@types/node': 18.0.0
+  '@types/nodemailer': 6.4.6
   '@types/react': 18.0.14
   '@types/react-dom': 18.0.5
   '@types/react-syntax-highlighter': 15.5.2
@@ -313,6 +317,12 @@ packages:
 
   /@types/node/18.0.0:
     resolution: {integrity: sha512-cHlGmko4gWLVI27cGJntjs/Sj8th9aYwplmZFwmmgYQQvL5NUsgVJG7OddLvNfLqYS31KFN0s3qlaD9qCaxACA==}
+    dev: true
+
+  /@types/nodemailer/6.4.6:
+    resolution: {integrity: sha512-pD6fL5GQtUKvD2WnPmg5bC2e8kWCAPDwMPmHe/ohQbW+Dy0EcHgZ2oCSuPlWNqk74LS5BVMig1SymQbFMPPK3w==}
+    dependencies:
+      '@types/node': 18.0.0
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -2002,6 +2012,11 @@ packages:
   /node-releases/2.0.5:
     resolution: {integrity: sha512-U9h1NLROZTq9uE1SNffn6WuPDg8icmi3ns4rEl/oTfIle4iLjTliCzgTsbaIFMq/Xn078/lfY/BL0GWZ+psK4Q==}
     dev: true
+
+  /nodemailer/6.8.0:
+    resolution: {integrity: sha512-EjYvSmHzekz6VNkNd12aUqAco+bOkRe3Of5jVhltqKhEsjw/y0PYPJfp83+s9Wzh1dspYAkUW/YNQ350NATbSQ==}
+    engines: {node: '>=6.0.0'}
+    dev: false
 
   /normalize-path/3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
