@@ -6,6 +6,8 @@ import {
 const EMAIL_FROM = "no-reply@businessfactory.dev";
 async function getTransporter() {
   if (process.env.NODE_ENV === "development") {
+    console.log("Creating test account");
+
     const testAccount = await createTestAccount();
     return createTransport({
       host: "smtp.ethereal.email",
@@ -16,7 +18,7 @@ async function getTransporter() {
       },
     });
   }
-  console.log("process.env.EMAIL_PASSWORD", process.env.EMAIL_PASSWORD);
+  console.log("Creating production account");
 
   return createTransport({
     host: "smtpout.secureserver.net",
@@ -40,6 +42,8 @@ export async function sendEmail({
   html: string;
 }) {
   const transport = await getTransporter();
+  console.log("Got transporter, sending email");
+
   const result = await transport.sendMail({
     to,
     from: EMAIL_FROM,
@@ -47,9 +51,14 @@ export async function sendEmail({
     text,
     html,
   });
+  console.log("Email sent");
+
   const failed = result.rejected.concat(result.pending).filter(Boolean);
   if (failed.length) {
+    console.log("Failed to send email", failed);
+
     throw new Error(`Email(s) (${failed.join(", ")}) could not be sent`);
   }
+
   console.log("Preview of email: %s", getTestMessageUrl(result));
 }
