@@ -5,17 +5,17 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Container } from "@/components/Container";
 import Head from 'next/head'
-import Breadcrumb from "@/components/Breadcrump";
+import Stars from "@/components/Stars";
 
 function MyApp({ Component, pageProps }: AppProps) {
+
   return (<>
     <Head>
-      {/* the favicon */}
       <link rel="icon" href="/favicon.ico" />
     </Head>
+    <Stars />
     <Container >
       <Header />
-      {/* <Breadcrumb /> */}
     </Container>
     <Component {...pageProps} />
     <Footer />

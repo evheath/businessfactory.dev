@@ -122,10 +122,10 @@ export default function Mycomponent() {
 Notice that the call to faker exists inside the component sent to client. Meaning, this *will* send the package over the wire, which is what we are trying to avoid. You can verify this by looking at the dev tools network or source tab:
 
 
-![alt](https://firebasestorage.googleapis.com/v0/b/business-factory-30cbd.appspot.com/o/Screen%20Shot%202022-06-29%20at%2011.47.40%20AM.png?alt=media&token=080adbed-4f12-4225-8bd9-ca84382a7873)
+![2.4 MB just to generate 'David Koss'](https://firebasestorage.googleapis.com/v0/b/business-factory-30cbd.appspot.com/o/Screen%20Shot%202022-06-29%20at%2011.47.40%20AM.png?alt=media&token=080adbed-4f12-4225-8bd9-ca84382a7873)
 
 Compare this to when we use getServerSideProps():
 
-![alt](https://firebasestorage.googleapis.com/v0/b/business-factory-30cbd.appspot.com/o/Screen%20Shot%202022-06-29%20at%2011.56.14%20AM.png?alt=media&token=08a649b5-f098-48e4-b8a5-d0f6aedfc227)
+![When faker isn't sent over the wire, the component is only 3.9 kB](https://firebasestorage.googleapis.com/v0/b/business-factory-30cbd.appspot.com/o/Screen%20Shot%202022-06-29%20at%2011.56.14%20AM.png?alt=media&token=08a649b5-f098-48e4-b8a5-d0f6aedfc227)
 
 

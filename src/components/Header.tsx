@@ -113,10 +113,8 @@ export function Header() {
           </div>
         </div>
         <div className="flex items-center gap-x-5 md:gap-x-8">
-          <Button href="/contact" color="indigo">
-            <span>
-              Contact me
-            </span>
+          <Button href="/contact">
+            Contact me
           </Button>
           <div className="-mr-1 md:hidden">
             <MobileNavigation />

@@ -31,7 +31,7 @@ const variantStyles = {
 
 export function Button({
   variant = 'solid',
-  color = 'blue',
+  color = 'indigo',
   className = "",
   href,
   children,
