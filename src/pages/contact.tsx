@@ -1,13 +1,14 @@
 import { Button } from "@/components/Button";
 import SubmissionModal from "@/components/SubmissionModal";
+import clsx from "clsx";
 import Image from "next/future/image";
 import { FormEvent, useState } from "react";
-import { ZodIssue } from "zod";
 
 export default function ContactPage() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    // https://nextjs.org/docs/guides/building-forms
+    setIsSubmitting(true);
 
     // Stop the form from submitting and refreshing the page.
     event.preventDefault();
@@ -45,6 +46,8 @@ export default function ContactPage() {
       // If the response is not OK, log the error.
       console.error(response);
     }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -278,7 +281,13 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="text-right sm:col-span-2">
-                <Button color="indigo">Submit</Button>
+                <Button
+                  color="indigo"
+                  disabled={isSubmitting}
+                  className={clsx(isSubmitting && "cursor-wait")}
+                >
+                  Submit
+                </Button>
               </div>
             </form>
           </div>
