@@ -3,6 +3,7 @@ import SubmissionModal from "@/components/SubmissionModal";
 import clsx from "clsx";
 import Image from "next/future/image";
 import { FormEvent, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactPage() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -281,6 +282,10 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="text-right sm:col-span-2">
+                <ReCAPTCHA
+                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+                />
+                ,
                 <Button
                   color="indigo"
                   disabled={isSubmitting}

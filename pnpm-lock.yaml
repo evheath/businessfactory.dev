@@ -9,6 +9,7 @@ specifiers:
   '@types/nodemailer': ^6.4.6
   '@types/react': 18.0.14
   '@types/react-dom': 18.0.5
+  '@types/react-google-recaptcha': ^2.1.5
   '@types/react-syntax-highlighter': ^15.5.2
   autoprefixer: ^10.4.7
   clsx: ^1.2.0
@@ -22,6 +23,7 @@ specifiers:
   postcss-focus-visible: ^6.0.4
   react: 18.2.0
   react-dom: 18.2.0
+  react-google-recaptcha: ^2.1.0
   react-markdown: ^8.0.3
   react-syntax-highlighter: ^15.5.0
   tailwindcss: ^3.1.4
@@ -41,6 +43,7 @@ dependencies:
   postcss-focus-visible: 6.0.4_postcss@8.4.14
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-google-recaptcha: 2.1.0_react@18.2.0
   react-markdown: 8.0.3_luyos4mouogwq6z3wafb3re4ce
   react-syntax-highlighter: 15.5.0_react@18.2.0
   zod: 3.17.10
@@ -50,6 +53,7 @@ devDependencies:
   '@types/nodemailer': 6.4.6
   '@types/react': 18.0.14
   '@types/react-dom': 18.0.5
+  '@types/react-google-recaptcha': 2.1.5
   '@types/react-syntax-highlighter': 15.5.2
   autoprefixer: 10.4.7_postcss@8.4.14
   eslint: 8.18.0
@@ -330,6 +334,12 @@ packages:
 
   /@types/react-dom/18.0.5:
     resolution: {integrity: sha512-OWPWTUrY/NIrjsAPkAk1wW9LZeIjSvkXRhclsFO8CZcZGCOg2G0YZy4ft+rOyYxy8B7ui5iZzi9OkDebZ7/QSA==}
+    dependencies:
+      '@types/react': 18.0.14
+    dev: true
+
+  /@types/react-google-recaptcha/2.1.5:
+    resolution: {integrity: sha512-iWTjmVttlNgp0teyh7eBXqNOQzVq2RWNiFROWjraOptRnb1OcHJehQnji0sjqIRAk9K0z8stjyhU+OLpPb0N6w==}
     dependencies:
       '@types/react': 18.0.14
     dev: true
@@ -1400,6 +1410,12 @@ packages:
     resolution: {integrity: sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==}
     dev: false
 
+  /hoist-non-react-statics/3.3.2:
+    resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
+    dependencies:
+      react-is: 16.13.1
+    dev: false
+
   /ignore/5.2.0:
     resolution: {integrity: sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==}
     engines: {node: '>= 4'}
@@ -2302,6 +2318,16 @@ packages:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
 
+  /react-async-script/1.2.0_react@18.2.0:
+    resolution: {integrity: sha512-bCpkbm9JiAuMGhkqoAiC0lLkb40DJ0HOEJIku+9JDjxX3Rcs+ztEOG13wbrOskt3n2DTrjshhaQ/iay+SnGg5Q==}
+    peerDependencies:
+      react: '>=16.4.1'
+    dependencies:
+      hoist-non-react-statics: 3.3.2
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
+
   /react-dom/18.2.0_react@18.2.0:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
@@ -2310,6 +2336,16 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+
+  /react-google-recaptcha/2.1.0_react@18.2.0:
+    resolution: {integrity: sha512-K9jr7e0CWFigi8KxC3WPvNqZZ47df2RrMAta6KmRoE4RUi7Ys6NmNjytpXpg4HI/svmQJLKR+PncEPaNJ98DqQ==}
+    peerDependencies:
+      react: '>=16.4.1'
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-async-script: 1.2.0_react@18.2.0
+    dev: false
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
