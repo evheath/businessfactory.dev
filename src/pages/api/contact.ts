@@ -17,6 +17,9 @@ export default async function contactAPI(
       company: z.string().nullish(),
       howDidYouHearAboutUs: z.string().nullish(),
       budget: z.string().min(1, { message: "Budget is required" }),
+      "g-recaptcha-response": z
+        .string()
+        .min(1, { message: "Captcha is required" }),
     })
     .safeParse(req.body);
 
@@ -28,6 +31,27 @@ export default async function contactAPI(
     });
     return;
   }
+
+  // verify captcha
+  const captchaResponse = await fetch(
+    `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${zodParse.data["g-recaptcha-response"]}`,
+    {
+      method: "POST",
+    }
+  );
+  const captchaData = await captchaResponse.json();
+  if (!captchaData.success) {
+    res.status(400).json({
+      errors: [
+        {
+          path: ["g-recaptcha-response"],
+          message: "Captcha is invalid",
+        },
+      ],
+    });
+    return;
+  }
+
   await sendEmail({
     to: "elliot@businessfactory.dev",
     subject: "New contact form submission",

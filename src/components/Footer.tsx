@@ -71,7 +71,7 @@ const navigation = {
     //   ),
     // },
   ],
-}
+};
 
 export function Footer() {
   return (
@@ -94,8 +94,10 @@ export function Footer() {
             </a>
           ))}
         </div> */}
-        <p className="text-center text-base text-gray-400">&copy; 2022 Business Factory, LLC. All rights reserved.</p>
+        <p className="text-center text-base text-gray-400">
+          &copy; 2023 Business Factory, LLC. All rights reserved.
+        </p>
       </div>
     </footer>
-  )
+  );
 }
