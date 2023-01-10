@@ -13,6 +13,7 @@ specifiers:
   '@types/react-syntax-highlighter': ^15.5.2
   autoprefixer: ^10.4.7
   clsx: ^1.2.0
+  csstype: ^3.0.10
   eslint: 8.18.0
   eslint-config-next: 12.1.6
   focus-visible: ^5.2.0
@@ -24,6 +25,7 @@ specifiers:
   react: 18.2.0
   react-dom: 18.2.0
   react-google-recaptcha: ^2.1.0
+  react-hot-toast: ^2.4.0
   react-markdown: ^8.0.3
   react-syntax-highlighter: ^15.5.0
   tailwindcss: ^3.1.4
@@ -36,6 +38,7 @@ dependencies:
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.4
   '@tailwindcss/typography': 0.5.2_tailwindcss@3.1.4
   clsx: 1.2.0
+  csstype: 3.1.0
   focus-visible: 5.2.0
   gray-matter: 4.0.3
   next: 12.2.0_biqbaboplfbrettd7655fr4n2y
@@ -44,6 +47,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-google-recaptcha: 2.1.0_react@18.2.0
+  react-hot-toast: 2.4.0_vt6aeitzauirmcdhimiad2yjxy
   react-markdown: 8.0.3_luyos4mouogwq6z3wafb3re4ce
   react-syntax-highlighter: 15.5.0_react@18.2.0
   zod: 3.17.10
@@ -1345,6 +1349,14 @@ packages:
       slash: 3.0.0
     dev: true
 
+  /goober/2.1.11_csstype@3.1.0:
+    resolution: {integrity: sha512-5SS2lmxbhqH0u9ABEWq7WPU69a4i2pYcHeCxqaNq6Cw3mnrF0ghWNM4tEGid4dKy8XNIAUbuThuozDHHKJVh3A==}
+    peerDependencies:
+      csstype: ^3.0.10
+    dependencies:
+      csstype: 3.1.0
+    dev: false
+
   /gray-matter/4.0.3:
     resolution: {integrity: sha512-5v6yZd4JK3eMI3FqqCouswVqwugaA9r4dNZB1wwcmrD02QkV5H0y7XBQW8QwQqEaZY1pM9aqORSORhJRdNK44Q==}
     engines: {node: '>=6.0'}
@@ -2345,6 +2357,20 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-async-script: 1.2.0_react@18.2.0
+    dev: false
+
+  /react-hot-toast/2.4.0_vt6aeitzauirmcdhimiad2yjxy:
+    resolution: {integrity: sha512-qnnVbXropKuwUpriVVosgo8QrB+IaPJCpL8oBI6Ov84uvHZ5QQcTp2qg6ku2wNfgJl6rlQXJIQU5q+5lmPOutA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      goober: 2.1.11_csstype@3.1.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    transitivePeerDependencies:
+      - csstype
     dev: false
 
   /react-is/16.13.1:

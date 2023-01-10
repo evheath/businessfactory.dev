@@ -4,15 +4,16 @@ import clsx from "clsx";
 import Image from "next/future/image";
 import { FormEvent, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import { toast } from "react-hot-toast";
 
 export default function ContactPage() {
   const [modalOpen, setModalOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    setIsSubmitting(true);
-
     // Stop the form from submitting and refreshing the page.
     event.preventDefault();
+    setIsSubmitting(true);
+    const toastId = toast.loading("Submitting...");
 
     // Get data from the form.
     const form = event.target as HTMLFormElement;
@@ -43,9 +44,15 @@ export default function ContactPage() {
     if (response.ok) {
       // If the response is OK, open the modal.
       setModalOpen(true);
+      toast.success("Submitted!", { id: toastId });
     } else {
-      // If the response is not OK, log the error.
       console.error(response);
+      toast.error(
+        "There was a problem. Please check the captcha and try again.",
+        {
+          id: toastId,
+        }
+      );
     }
 
     setIsSubmitting(false);
