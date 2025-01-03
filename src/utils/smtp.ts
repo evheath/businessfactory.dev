@@ -3,7 +3,7 @@ import {
   createTransport,
   getTestMessageUrl,
 } from "nodemailer";
-const EMAIL_FROM = "notifications@businessfactory.dev";
+const EMAIL_FROM = process.env.EMAIL_FROM as string;
 async function getTransporter() {
   if (process.env.NODE_ENV === "development") {
     console.log("Creating test account");
@@ -21,7 +21,7 @@ async function getTransporter() {
   console.log("Creating production account");
 
   return createTransport({
-    host: "smtpout.secureserver.net",
+    host: "smtp.office365.com",
     port: 587,
     auth: {
       user: EMAIL_FROM,
