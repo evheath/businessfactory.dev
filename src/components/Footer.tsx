@@ -74,6 +74,8 @@ const navigation = {
 };
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer>
       <div className="mx-auto py-4 px-4 overflow-hidden sm:px-6 lg:px-8">
@@ -95,7 +97,7 @@ export function Footer() {
           ))}
         </div> */}
         <p className="text-center text-base text-gray-400">
-          &copy; 2023 Business Factory, LLC. All rights reserved.
+          &copy; {currentYear} Business Factory, LLC. All rights reserved.
         </p>
       </div>
     </footer>
