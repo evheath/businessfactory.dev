@@ -3,7 +3,7 @@ import {
   createTransport,
   getTestMessageUrl,
 } from "nodemailer";
-const EMAIL_FROM = "no-reply@businessfactory.dev";
+const EMAIL_FROM = "notifications@businessfactory.dev";
 async function getTransporter() {
   if (process.env.NODE_ENV === "development") {
     console.log("Creating test account");
