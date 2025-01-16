@@ -1,6 +1,6 @@
-import Image from 'next/future/image'
+import Image from "next/image";
 
-export default function GetALegUp({ }) {
+export default function GetALegUp({}) {
   return (
     <>
       <div className="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -10,10 +10,13 @@ export default function GetALegUp({ }) {
               <span className="block text-white">Get a leg up.</span>
             </h1>
             <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              With your own app, you can avoid the rat race of identical software, own all your data, boost productivity and
+              With your own app, you can avoid the rat race of identical
+              software, own all your data, boost productivity and
             </p>
             <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-black sm:mt-5 sm:text-6xl lg:mt-0 xl:text-6xl">
-              <span className="block text-indigo-500">Focus on what your business does best</span>
+              <span className="block text-indigo-500">
+                Focus on what your business does best
+              </span>
             </h1>
           </div>
         </div>
@@ -22,11 +25,13 @@ export default function GetALegUp({ }) {
             <Image
               className="w-full"
               src={`/lucid/right/4.svg`}
-              alt="Lucid SVG" />
-
+              alt="Lucid SVG"
+              width={100}
+              height={100}
+            />
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
