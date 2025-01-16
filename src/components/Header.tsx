@@ -1,19 +1,22 @@
-import { Fragment } from 'react'
-import Link from 'next/link'
-import { Popover, Transition } from '@headlessui/react'
-import clsx from 'clsx'
+import { Fragment } from "react";
+import Link from "next/link";
+import { Popover, Transition } from "@headlessui/react";
+import clsx from "clsx";
 
-import { Button } from '@/components/Button'
-import { NavLink } from '@/components/NavLink'
-import { Logo } from './Logo'
-import Brand from './Brand'
+import { Button } from "@/components/Button";
+import { NavLink } from "@/components/NavLink";
+import { Logo } from "./Logo";
+import Brand from "./Brand";
 
 /**
  * The popover menu (for mobile)
  */
-function MobileNavLink({ href, children }: {
-  href: string,
-  children: React.ReactNode[] | React.ReactNode,
+function MobileNavLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode[] | React.ReactNode;
 }) {
   return (
     <>
@@ -21,7 +24,7 @@ function MobileNavLink({ href, children }: {
         {children}
       </Popover.Button>
     </>
-  )
+  );
 }
 
 /**
@@ -39,19 +42,19 @@ function MobileNavIcon({ open }: { open: boolean }) {
       <path
         d="M0 1H14M0 7H14M0 13H14"
         className={clsx(
-          'origin-center transition',
-          open && 'scale-90 opacity-0'
+          "origin-center transition",
+          open && "scale-90 opacity-0"
         )}
       />
       <path
         d="M2 2L12 12M12 2L2 12"
         className={clsx(
-          'origin-center transition',
-          !open && 'scale-90 opacity-0'
+          "origin-center transition",
+          !open && "scale-90 opacity-0"
         )}
       />
     </svg>
-  )
+  );
 }
 
 /**
@@ -91,12 +94,13 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
+            <MobileNavLink href="/about">About</MobileNavLink>
             <MobileNavLink href="/blog">Blog</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
     </Popover>
-  )
+  );
 }
 
 export function Header() {
@@ -104,23 +108,28 @@ export function Header() {
     <header className="py-1">
       <nav className="relative z-50 flex justify-between">
         <div className="flex items-center md:gap-x-12">
-          <Link className="group flex flex-col md:flex-row items-center h-24" href="/" aria-label="Home">
-            <Logo className='md:h-full' />
+          <Link
+            className="group flex flex-col md:flex-row items-center h-24"
+            href="/"
+            aria-label="Home"
+          >
+            <Logo className="md:h-full" />
             <Brand className="mt-1 md:h-12 md:ml-2" />
           </Link>
+          <div className="hidden md:flex md:gap-x-6 hover:scale-125">
+            <NavLink href="/about">About</NavLink>
+          </div>
           <div className="hidden md:flex md:gap-x-6 hover:scale-125">
             <NavLink href="/blog">Blog</NavLink>
           </div>
         </div>
         <div className="flex items-center gap-x-5 md:gap-x-8">
-          <Button href="/contact">
-            Contact me
-          </Button>
+          <Button href="/contact">Contact me</Button>
           <div className="-mr-1 md:hidden">
             <MobileNavigation />
           </div>
         </div>
       </nav>
     </header>
-  )
+  );
 }
