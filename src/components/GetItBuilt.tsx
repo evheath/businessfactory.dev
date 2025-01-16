@@ -12,7 +12,7 @@ export default function GetItBuilt({}) {
               <span className="block text-indigo-500">Get it built</span>
             </h1>
             <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              Web, mobile, you name it we build it. Step into the one-stop-shop
+              Web, mobile, you name it I build it. Step into the one-stop-shop
               to turn <span className="font-bold">your</span> idea into a{" "}
               <span className="italic">real</span> app.
             </p>

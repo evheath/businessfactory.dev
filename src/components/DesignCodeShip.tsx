@@ -8,8 +8,8 @@ export default function DesignCodeShip({}) {
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-2xl sm:px-6 lg:px-0 lg:text-left lg:flex lg:items-center">
           <div className="lg:py-24">
             <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              No need to have an entire app planned out beforehand. With our
-              iterative process, your regular feedback will help
+              No need to have an entire app planned out beforehand. With my
+              iterative process and your regular feedback, we will
             </p>
             <h1 className="text-4xl tracking-tight font-extrabold text-black \ sm:text-6xl xl:text-6xl">
               <span className="block text-indigo-500">

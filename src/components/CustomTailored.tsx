@@ -19,7 +19,7 @@ export default function CustomTailored({}) {
           <div className="lg:py-24">
             <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
               Nobody understands your workflow better than you. Which is why you
-              need an app
+              need a bespoke app
             </p>
             <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-black sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
               <span className="block text-indigo-500">Custom tailored</span>

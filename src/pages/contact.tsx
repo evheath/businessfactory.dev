@@ -81,9 +81,9 @@ export default function ContactPage() {
               Let&apos;s make it happen
             </h2>
             <p className="mt-4 text-lg text-gray-400 sm:mt-3">
-              No matter where you are in the process, Business Factory can help
-              you get your dream app made. Fill out this form and I&apos;ll
-              contact you for a free consultation.
+              No matter where you are in the process, I can help you get your
+              app made. Fill out this form and I&apos;ll contact you for a free
+              consultation.
             </p>
             <form
               onSubmit={handleSubmit}
@@ -272,7 +272,7 @@ export default function ContactPage() {
                     htmlFor="howDidYouHearAboutUs"
                     className="block text-sm font-medium text-gray-400"
                   >
-                    How did you hear about Business Factory?
+                    How did you hear about me?
                   </label>
                   <span
                     id="howDidYouHearAboutUs-description"
