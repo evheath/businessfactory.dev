@@ -22,7 +22,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>{path ? `${capitalize(path)} - ` : ""} Business Factory</title>
+        <title>
+          {path ? `${capitalize(path)} - Business Factory` : "Business Factory"}
+        </title>
       </Head>
 
       <Toaster position="top-center" />

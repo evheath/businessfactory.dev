@@ -19,7 +19,6 @@ export default function BlogPostPage({
   return (
     <>
       <Head>
-        <title>{title}</title>
         <meta name="description" content={description} />
       </Head>
       <div className="relative py-16 overflow-hidden">
