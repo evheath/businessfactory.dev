@@ -48,9 +48,15 @@ const Page = () => {
           <GitHub />
         </SVGButton>
       </div>
-      <div className="mt-12">
+      <div className="mt-12 max-w-3xl">
+        <p className="text-gray-200 text-3xl">My Expertise</p>
         <p className="text-gray-300 text-lg">
-          If you are technically inclined check out
+          Not all technologies are created equal. You can view a full list my
+          technicnal skills further below, but right here is the tech stack I
+          believe is best.
+        </p>
+        <p className="text-gray-200">
+          <span className="font-semibold">Database: PostgreSQL</span> - I
         </p>
       </div>
     </div>

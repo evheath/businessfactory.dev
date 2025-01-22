@@ -17,13 +17,7 @@ export const LinkedIn = () => (
 
 export const GitHub = () => (
   <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <g
-      id="Page-1"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
-    >
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g
         id="Dribbble-Light-Preview"
         transform="translate(-140.000000, -7559.000000)"
