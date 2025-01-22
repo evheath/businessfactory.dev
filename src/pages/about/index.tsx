@@ -7,6 +7,7 @@ import {
   PostgreSQL,
   ReactIcon,
   TailwindIcon,
+  TypescriptIcon,
 } from "@/svgs";
 import { SVGButton } from "@/components/SVGButton";
 
@@ -34,11 +35,11 @@ const Page = () => {
           apps for small businesses. There is nothing more satisfying than
           seeing a client's project come to life. Most modern businesses need a
           some sort of web or mobile presense to stay competitive. Where I come
-          in is when the cookie-cutter solutions just don't cut it. If you have
-          special user flows, unique data requirements, or want to build an
-          industry defining app your competitors{" "}
+          in is when the cookie-cutter solutions don't cook the cuttie...🤔 If
+          you have special user flows, unique data requirements, or want to
+          build an industry defining app your competitors{" "}
           <span className="underline">must</span> subscribe to, I'm your guy. I
-          can do more than greenfield apps too--I have experience with legacy
+          can do more than greenfield apps too. I have experience with legacy
           codebases and can help you modernize your existing app. Or, if your
           developer left you high and dry, I can help you pick up the pieces and
           train new employees.
@@ -63,12 +64,12 @@ const Page = () => {
           skills.
         </p>
         <p className="text-gray-200  flex items-center space-x-2">
-          <span className="w-20">Database:</span>
+          <span className="w-20">Language:</span>
           <SVGButton>
-            <PostgreSQL />
+            <TypescriptIcon />
           </SVGButton>
-          <span className="font-semibold">PostgreSQL</span>
-          <span>- A balance of safety and flexiblity.</span>
+          <span className="font-semibold">TypeScript</span>
+          <span>- Javascript, but better.</span>
         </p>
         <p className="text-gray-200  flex items-center space-x-2">
           <span className="w-20">Frontend:</span>
@@ -76,7 +77,9 @@ const Page = () => {
             <ReactIcon />
           </SVGButton>
           <span className="font-semibold">React</span>
-          <span>- Well documented and also usable for mobile apps.</span>
+          <span>
+            - Well documented, works for mobile, and supports TypeScript.
+          </span>
         </p>
         <p className="text-gray-200  flex items-center space-x-2">
           <span className="w-20">Backend:</span>
@@ -84,7 +87,10 @@ const Page = () => {
             <NextIcon />
           </SVGButton>
           <span className="font-semibold">Next.js</span>
-          <span>- Largely carried by Vercel's first class support.</span>
+          <span>
+            - The easiest way to go serverless but can still be self-hosted if
+            needed.
+          </span>
         </p>
         <p className="text-gray-200  flex items-center space-x-2">
           <span className="w-20">Styling:</span>
@@ -96,6 +102,14 @@ const Page = () => {
             - If I don't use tailwind I have to Google flexbox syntax everytime
             😂
           </span>
+        </p>
+        <p className="text-gray-200  flex items-center space-x-2">
+          <span className="w-20">Database:</span>
+          <SVGButton>
+            <PostgreSQL />
+          </SVGButton>
+          <span className="font-semibold">PostgreSQL</span>
+          <span>- If it ain't broke...it's probably not mongo</span>
         </p>
       </div>
     </div>
