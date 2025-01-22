@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type React from "react";
-import { GitHub, LinkedIn, PostgreSQL } from "@/svgs";
+import { GitHub, LinkedIn, PostgreSQL, ReactIcon } from "@/svgs";
 import { SVGButton } from "@/components/SVGButton";
 
 const Page = () => {
@@ -31,8 +31,8 @@ const Page = () => {
           special user flows, unique data requirements, or want to build an
           industry defining app your competitors{" "}
           <span className="underline">must</span> subscribe to, I'm your guy. I
-          do more than just code greenfield apps, I have experience with legacy
-          codebases, and can help you modernize your existing app. Or if you're
+          can do more than greenfield apps too--I have experience with legacy
+          codebases and can help you modernize your existing app. Or, if your
           developer left you high and dry, I can help you pick up the pieces and
           train new employees.
         </p>
@@ -49,18 +49,27 @@ const Page = () => {
         </SVGButton>
       </div>
       <div className="mt-12 max-w-3xl space-y-1">
-        <p className="text-gray-200 text-3xl">My Expertise</p>
+        <p className="text-gray-200 text-3xl">My Tech Stack</p>
         <p className="text-gray-300 text-lg">
           Not all technologies are created equal. You can view a full list my
-          technical skills further below, but right here is my preferred tech
-          stack.
+          technical experience further below, but right here are my strongest
+          skills.
         </p>
-        <p className="text-gray-200 font-semibold flex items-center space-x-2">
+        <p className="text-gray-200  flex items-center space-x-2">
           <span>Database:</span>
           <SVGButton>
             <PostgreSQL />
           </SVGButton>
-          <span>PostgreSQL</span>
+          <span className="font-semibold">PostgreSQL</span>
+          <span>- A balance of safety and flexiblity.</span>
+        </p>
+        <p className="text-gray-200  flex items-center space-x-2">
+          <span>Frontend:</span>
+          <SVGButton>
+            <ReactIcon />
+          </SVGButton>
+          <span className="font-semibold">React</span>
+          <span>- Well documented and makes me feel smart 🤓</span>
         </p>
       </div>
     </div>

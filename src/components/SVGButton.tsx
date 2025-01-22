@@ -20,7 +20,7 @@ export const SVGButton: React.FC<SocialMediaButtonProps> = ({
 }) => {
   if (!href) {
     return (
-      <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-300 hover:bg-gray-400">
+      <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 ">
         <div className="w-6 h-6">{children}</div>
       </div>
     );
