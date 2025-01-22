@@ -1,6 +1,13 @@
 import Image from "next/image";
 import type React from "react";
-import { GitHub, LinkedIn, NextIcon, PostgreSQL, ReactIcon } from "@/svgs";
+import {
+  GitHub,
+  LinkedIn,
+  NextIcon,
+  PostgreSQL,
+  ReactIcon,
+  TailwindIcon,
+} from "@/svgs";
 import { SVGButton } from "@/components/SVGButton";
 
 const Page = () => {
@@ -56,7 +63,7 @@ const Page = () => {
           skills.
         </p>
         <p className="text-gray-200  flex items-center space-x-2">
-          <span className="w-24">Database:</span>
+          <span className="w-20">Database:</span>
           <SVGButton>
             <PostgreSQL />
           </SVGButton>
@@ -64,7 +71,7 @@ const Page = () => {
           <span>- A balance of safety and flexiblity.</span>
         </p>
         <p className="text-gray-200  flex items-center space-x-2">
-          <span className="w-24">Frontend:</span>
+          <span className="w-20">Frontend:</span>
           <SVGButton>
             <ReactIcon />
           </SVGButton>
@@ -72,12 +79,23 @@ const Page = () => {
           <span>- Well documented and also usable for mobile apps.</span>
         </p>
         <p className="text-gray-200  flex items-center space-x-2">
-          <span className="w-24">Backend:</span>
+          <span className="w-20">Backend:</span>
           <SVGButton>
             <NextIcon />
           </SVGButton>
           <span className="font-semibold">Next.js</span>
           <span>- Largely carried by Vercel's first class support.</span>
+        </p>
+        <p className="text-gray-200  flex items-center space-x-2">
+          <span className="w-20">Styling:</span>
+          <SVGButton>
+            <TailwindIcon />
+          </SVGButton>
+          <span className="font-semibold">Tailwind</span>
+          <span>
+            - If I don't use tailwind I have to Google flexbox syntax everytime
+            😂
+          </span>
         </p>
       </div>
     </div>
