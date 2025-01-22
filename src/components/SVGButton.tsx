@@ -10,7 +10,7 @@ import {
 interface SocialMediaButtonProps {
   children: React.ReactNode;
   href: string;
-  label: string;
+  label?: string;
 }
 
 export const SVGButton: React.FC<SocialMediaButtonProps> = ({
@@ -18,23 +18,36 @@ export const SVGButton: React.FC<SocialMediaButtonProps> = ({
   href,
   label,
 }) => {
+  if (label) {
+    return (
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Link
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-200"
+            >
+              <div className="w-6 h-6">{children}</div>
+            </Link>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>{label}</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+    );
+  }
+
   return (
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Link
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300"
-          >
-            <div className="w-6 h-6">{children}</div>
-          </Link>
-        </TooltipTrigger>
-        <TooltipContent>
-          <p>{label}</p>
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 hover:bg-gray-500"
+    >
+      <div className="w-6 h-6">{children}</div>
+    </Link>
   );
 };
