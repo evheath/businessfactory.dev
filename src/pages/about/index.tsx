@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type React from "react";
 import { LinkedIn } from "@/svgs";
-import SocialMediaButton from "@/components/SocialMediaButton";
+import { SVGButton } from "@/components/SVGButton";
 
 const Page = () => {
   const yearsExperience = new Date().getFullYear() - 2018;
@@ -29,12 +29,12 @@ const Page = () => {
         </p>
       </div>
       <div className="flex items-center mt-4">
-        <SocialMediaButton
+        <SVGButton
           href="https://www.linkedin.com/in/elliotheath/"
           label="LinkedIn"
         >
           <LinkedIn />
-        </SocialMediaButton>
+        </SVGButton>
       </div>
     </div>
   );

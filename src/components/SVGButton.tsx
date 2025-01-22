@@ -1,14 +1,23 @@
-import type React from "react"
-import Link from "next/link"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import type React from "react";
+import Link from "next/link";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 interface SocialMediaButtonProps {
-  children: React.ReactNode
-  href: string
-  label: string
+  children: React.ReactNode;
+  href: string;
+  label: string;
 }
 
-const SocialMediaButton: React.FC<SocialMediaButtonProps> = ({ children, href, label }) => {
+export const SVGButton: React.FC<SocialMediaButtonProps> = ({
+  children,
+  href,
+  label,
+}) => {
   return (
     <TooltipProvider>
       <Tooltip>
@@ -27,8 +36,5 @@ const SocialMediaButton: React.FC<SocialMediaButtonProps> = ({ children, href, l
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-  )
-}
-
-export default SocialMediaButton
-
+  );
+};
