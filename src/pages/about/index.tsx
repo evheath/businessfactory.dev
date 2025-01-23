@@ -63,54 +63,52 @@ const Page = () => {
           technical experience further below, but right here are my strongest
           skills.
         </p>
-        <p className="text-gray-200  flex items-center space-x-2">
-          <span className="w-20">Language:</span>
+        <div className="text-gray-200  flex items-center space-x-2">
+          <p className="w-20">Language:</p>
           <SVGButton>
             <TypescriptIcon />
           </SVGButton>
-          <span className="font-semibold">TypeScript</span>
-          <span>- Javascript, but better.</span>
-        </p>
-        <p className="text-gray-200  flex items-center space-x-2">
-          <span className="w-20">Frontend:</span>
+          <p className="font-semibold">TypeScript</p>
+          <p>- Javascript, but better.</p>
+        </div>
+        <div className="text-gray-200  flex items-center space-x-2">
+          <p className="w-20">Frontend:</p>
           <SVGButton>
             <ReactIcon />
           </SVGButton>
-          <span className="font-semibold">React</span>
-          <span>
-            - Well documented, works for mobile, and supports TypeScript.
-          </span>
-        </p>
-        <p className="text-gray-200  flex items-center space-x-2">
-          <span className="w-20">Backend:</span>
+          <p className="font-semibold">React</p>
+          <p>- Well documented, works for mobile, and supports TypeScript.</p>
+        </div>
+        <div className="text-gray-200  flex items-center space-x-2">
+          <p className="w-20">Backend:</p>
           <SVGButton>
             <NextIcon />
           </SVGButton>
-          <span className="font-semibold">Next.js</span>
-          <span>
+          <p className="font-semibold">Next.js</p>
+          <p>
             - The easiest way to go serverless but can still be self-hosted if
             needed.
-          </span>
-        </p>
-        <p className="text-gray-200  flex items-center space-x-2">
-          <span className="w-20">Styling:</span>
+          </p>
+        </div>
+        <div className="text-gray-200  flex items-center space-x-2">
+          <p className="w-20">Styling:</p>
           <SVGButton>
             <TailwindIcon />
           </SVGButton>
-          <span className="font-semibold">Tailwind</span>
-          <span>
+          <p className="font-semibold">Tailwind</p>
+          <p>
             - If I don't use tailwind I have to Google flexbox syntax everytime
             😂
-          </span>
-        </p>
-        <p className="text-gray-200  flex items-center space-x-2">
-          <span className="w-20">Database:</span>
+          </p>
+        </div>
+        <div className="text-gray-200  flex items-center space-x-2">
+          <p className="w-20">Database:</p>
           <SVGButton>
             <PostgreSQL />
           </SVGButton>
-          <span className="font-semibold">PostgreSQL</span>
-          <span>- If it ain't broke...it's probably not mongo</span>
-        </p>
+          <p className="font-semibold">PostgreSQL</p>
+          <p>- If it ain't broke...it's probably not mongo</p>
+        </div>
       </div>
     </div>
   );
