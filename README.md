@@ -2,8 +2,8 @@
 
 - [ ] about page
   - [x] social media links
-  - [ ] skills
-  - [ ] work history
-  - [ ] education/qualifications
+  - [x] skills
+  - [?] work history
+  - [?] education/qualifications
 - [ ] portfolio
 - [ ] a new blog post
