@@ -135,8 +135,7 @@ const Page = () => {
             jasmine, pdf-lib
           </li>
           <li>
-            Tools: git, postman, trello, figma, slack, docker, vite, vscode,
-            npm, pnpm, yarn
+            Tools: git, postman, trello, figma, slack, docker, vite, vscode
           </li>
         </ul>
       </div>
