@@ -5,6 +5,7 @@ const Page = () => {
       <h1 className="text-white text-5xl font-medium font-sans">
         My Portfolio
       </h1>
+      <div className="my-4" />
       <ProjectCard
         title="Black and White"
         technologies={[
@@ -16,10 +17,10 @@ const Page = () => {
           "Prisma",
           "Supabase",
         ]}
-        images={[
-          "/placeholder.svg?height=400&width=600",
-          "/placeholder.svg?height=400&width=600",
-          "/placeholder.svg?height=400&width=600",
+        screenshots={[
+          { url: "/placeholder.svg?height=400&width=600", type: "web" },
+          { url: "/placeholder.svg?height=600&width=400", type: "mobile" },
+          { url: "/placeholder.svg?height=400&width=600", type: "web" },
         ]}
         description="A TurboTax-like web app to help an accountant manage her clients. Allows for easy data entry and file sharing. Some notable features include passwordless authentication, email notifications, and role-based access control."
       />
