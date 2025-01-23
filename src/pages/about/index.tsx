@@ -34,7 +34,7 @@ const Page = () => {
           For the last {yearsExperience} years, I have been building bespoke
           apps for small businesses. There is nothing more satisfying than
           seeing a client's project come to life. Most modern businesses need a
-          some sort of web or mobile presense to stay competitive. Where I come
+          some sort of web or mobile presence to stay competitive. Where I come
           in is when the cookie-cutter solutions don't cook the cuttie...🤔 If
           you have special user flows, unique data requirements, or want to
           build an industry defining app your competitors{" "}
@@ -97,7 +97,7 @@ const Page = () => {
           </SVGButton>
           <p className="font-semibold">Tailwind</p>
           <p>
-            - If I don't use tailwind I have to Google flexbox syntax everytime
+            - If I don't use tailwind I have to Google flexbox syntax every time
             😂
           </p>
         </div>
@@ -113,7 +113,7 @@ const Page = () => {
       <div className="mt-12 max-w-3xl space-y-1">
         <h3 className="text-gray-200 text-3xl">Technical Experience</h3>
         <p className="text-gray-300 text-lg">
-          In addition to my prefered tech stack, here are the techonologies I
+          In addition to my preferred tech stack, here are the technologies I
           have experience with:
         </p>
         <ul className="text-gray-200 list-disc list-inside">
@@ -135,7 +135,8 @@ const Page = () => {
             jasmine, pdf-lib
           </li>
           <li>
-            Tools: git, postman, trello, figma, slack, docker, vite, vscode
+            Tools: git, postman, trello, figma, slack, docker, vite, vscode,
+            npm, pnpm, yarn
           </li>
         </ul>
       </div>
