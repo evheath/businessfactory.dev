@@ -106,10 +106,16 @@ export default function ProjectCard({
         </div>
       </CardHeader>
       <CardContent>
-        <div className="relative mb-4">
+        <div
+          className="relative mb-4 cursor-pointer"
+          onClick={() => {
+            // open image in new tab
+            window.open(currentScreenshot.url, "_blank");
+          }}
+        >
           {currentScreenshot.type === "web" ? (
             <BrowserFrame>
-              <div className="aspect-video relative">
+              <div className="aspect-video relative cursor-pointer">
                 <img
                   src={currentScreenshot.url || "/placeholder.svg"}
                   alt={`Project screenshot ${currentImageIndex + 1}`}
@@ -132,7 +138,10 @@ export default function ProjectCard({
             <Button
               variant="secondary"
               size="icon"
-              onClick={prevImage}
+              onClick={(e) => {
+                e.stopPropagation();
+                prevImage();
+              }}
               className="rounded-full bg-gray-800 text-gray-200 opacity-70 hover:opacity-100"
               aria-label="Previous image"
             >
@@ -141,7 +150,10 @@ export default function ProjectCard({
             <Button
               variant="secondary"
               size="icon"
-              onClick={nextImage}
+              onClick={(e) => {
+                e.stopPropagation();
+                nextImage();
+              }}
               className="rounded-full bg-gray-800 text-gray-200 opacity-70 hover:opacity-100"
               aria-label="Next image"
             >

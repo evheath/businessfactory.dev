@@ -18,9 +18,26 @@ const Page = () => {
           "Supabase",
         ]}
         screenshots={[
-          { url: "/placeholder.svg?height=400&width=600", type: "web" },
-          { url: "/placeholder.svg?height=600&width=400", type: "mobile" },
-          { url: "/placeholder.svg?height=400&width=600", type: "web" },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3NesQ7GXaSrYwxLb3fK6g2jziy450WVAeIOPF",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3jIPFAK6JrV6YeXMTZEj9DCwqpNWbAGIyQo7S",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3E8K5vzQnNtfC9iRvMPeVBUJqOIuQ6r4Xck3S",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3wIwzdhWEC53iFNTVDZo7pylu60YrG9Q8qhKm",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3HMgKsBUbBch2ST5It8JGr6Ln3YDsNavuyExK",
+            type: "web",
+          },
         ]}
         description="A TurboTax-like web app to help an accountant manage her clients. Allows for easy data entry and file sharing. Some notable features include passwordless authentication, email notifications, and role-based access control."
       />
