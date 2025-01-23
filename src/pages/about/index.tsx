@@ -110,6 +110,35 @@ const Page = () => {
           <p>- If it ain't broke...it's probably not mongo</p>
         </div>
       </div>
+      <div className="mt-12 max-w-3xl space-y-1">
+        <h3 className="text-gray-200 text-3xl">Technical Experience</h3>
+        <p className="text-gray-300 text-lg">
+          In addition to my prefered tech stack, here are the techonologies I
+          have experience with:
+        </p>
+        <ul className="text-gray-200 list-disc list-inside">
+          <li>Frontend: vue, angular, jquery </li>
+          <li>Styling: css, bootstrap, scss, sass</li>
+          <li>Backend: express, symfony, rails</li>
+          <li>Languages: javascript, ruby, php, html, dart, java</li>
+          <li>Databases: mongodb, mysql, sqlite, firebase realtime</li>
+          <li>Mobile: react native, flutter</li>
+          <li>
+            Platforms: vercel, supabase, firebase, aws, heroku, planetscale
+          </li>
+          <li>
+            APIs: twilio, sendgrid, shopify, bigcommerce, shippo, fedex,
+            ethereal.email, outlook
+          </li>
+          <li>
+            Packages: prisma, trpc, zod, date-fns, lodash, moment, turborepo,
+            jasmine, pdf-lib
+          </li>
+          <li>
+            Tools: git, postman, trello, figma, slack, docker, vite, vscode
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
