@@ -1,4 +1,4 @@
-import { ProjectCard } from "@/components/portfolio-project-card";
+import ProjectCard from "@/components/portfolio-project-card";
 const Page = () => {
   return (
     <div className="m-24">
@@ -6,14 +6,22 @@ const Page = () => {
         My Portfolio
       </h1>
       <ProjectCard
-        title="Awesome Web App"
-        technologies={["React", "Next.js", "TypeScript", "Tailwind CSS"]}
+        title="Black and White"
+        technologies={[
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind",
+          "PostgreSQL",
+          "Prisma",
+          "Supabase",
+        ]}
         images={[
           "/placeholder.svg?height=400&width=600",
           "/placeholder.svg?height=400&width=600",
           "/placeholder.svg?height=400&width=600",
         ]}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        description="A TurboTax-like web app to help an accountant manage her clients. Allows for easy data entry and file sharing. Some notable features include passwordless authentication, email notifications, and role-based access control."
       />
     </div>
   );
