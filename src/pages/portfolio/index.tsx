@@ -82,6 +82,45 @@ const Page = () => {
         ]}
         description="A web dashboard for a small med-spa. Some notable features include tracking client's treatments and services, realtime chat, and a trouble-ticket system."
       />
+      <div className="my-8" />
+      <ProjectCard
+        title="SDC"
+        technologies={[
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "Socket.io",
+          "Shopify",
+          "Shippo",
+          "FedEx",
+        ]}
+        screenshots={[
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3XV7HilsoHDWST9pECJxRns4wiVcKt7UN8yAh",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc31U7ZOW34wYTdxKalZJkE9OzV0WejpUAotr7B",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3CCo4LbqMaVfkOdy2m1ugYWxGE3wRPIT4vJlo",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3RpoNSXiFheHm6zlxdYoMXvpPLOCasAcjuqBy",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3p8DsnJvO6WnDprauM4BT5jbycGgUFEXz3hNw",
+            type: "web",
+          },
+        ]}
+        description="Inventory and order management system for a small business. Employees on the factory floor have guided instructions on how to assemble products. This was a project I was brought on to fix after the original developer left the company. The inventory hierarchy is rather complex, requiring some algorithms I learned in college."
+      />
     </div>
   );
 };
