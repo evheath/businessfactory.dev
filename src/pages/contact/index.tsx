@@ -1,7 +1,7 @@
 import { Button } from "@/components/Button";
 import SubmissionModal from "@/components/SubmissionModal";
 import clsx from "clsx";
-import Image from "next/future/image";
+import Image from "next/image";
 import { FormEvent, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { toast } from "react-hot-toast";
@@ -69,6 +69,8 @@ export default function ContactPage() {
             src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
             alt=""
             priority={true}
+            width={950}
+            height={950}
           />
         </div>
       </div>
@@ -79,9 +81,9 @@ export default function ContactPage() {
               Let&apos;s make it happen
             </h2>
             <p className="mt-4 text-lg text-gray-400 sm:mt-3">
-              No matter where you are in the process, Business Factory can help
-              you get your dream app made. Fill out this form and I&apos;ll
-              contact you for a free consultation.
+              No matter where you are in the process, I can help you get your
+              app made. Fill out this form and I&apos;ll contact you for a free
+              consultation.
             </p>
             <form
               onSubmit={handleSubmit}
@@ -270,7 +272,7 @@ export default function ContactPage() {
                     htmlFor="howDidYouHearAboutUs"
                     className="block text-sm font-medium text-gray-400"
                   >
-                    How did you hear about Business Factory?
+                    How did you hear about me?
                   </label>
                   <span
                     id="howDidYouHearAboutUs-description"
