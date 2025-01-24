@@ -11,47 +11,53 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-interface BrowserFrameProps {
-  children: React.ReactNode;
-}
 
-interface MobileFrameProps {
-  children: React.ReactNode;
-}
-
-function MobileFrame({ children }: MobileFrameProps) {
-  return (
-    <div className="rounded-3xl overflow-hidden bg-gray-800 border border-gray-700 max-w-[300px] mx-auto">
-      <div className="h-6 bg-gray-900 flex items-center justify-center">
-        <div className="w-16 h-1 bg-gray-700 rounded-full"></div>
-      </div>
-      <div className="p-1">{children}</div>
-      <div className="h-8 bg-gray-900 flex items-center justify-center">
-        <div className="w-8 h-8 rounded-full border-2 border-gray-700"></div>
-      </div>
-    </div>
-  );
-}
-
-function BrowserFrame({ children }: BrowserFrameProps) {
-  return (
-    <div className="rounded-lg overflow-hidden bg-gray-800 border border-gray-700">
-      <div className="h-8 bg-gray-900 flex items-center px-4">
-        <div className="flex space-x-2">
-          <div className="w-3 h-3 rounded-full bg-red-500"></div>
-          <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div className="w-3 h-3 rounded-full bg-green-500"></div>
-        </div>
-      </div>
-      <div className="p-1">{children}</div>
-    </div>
-  );
-}
+type ScreenshotType = "web" | "mobile" | "none";
 
 interface Screenshot {
   url: string;
-  type: "web" | "mobile";
+  type: ScreenshotType;
 }
+const Frame = ({
+  children,
+  type,
+}: {
+  children: React.ReactNode;
+  type: ScreenshotType;
+}) => {
+  if (type === "web") {
+    return (
+      <div className="rounded-lg overflow-hidden bg-gray-800 border border-gray-700">
+        <div className="h-8 bg-gray-900 flex items-center px-4">
+          <div className="flex space-x-2">
+            <div className="w-3 h-3 rounded-full bg-red-500"></div>
+            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+            <div className="w-3 h-3 rounded-full bg-green-500"></div>
+          </div>
+        </div>
+        <div className="p-1">
+          <div className="aspect-video relative cursor-pointer">{children}</div>
+        </div>
+      </div>
+    );
+  } else if (type === "mobile") {
+    return (
+      <div className="rounded-3xl overflow-hidden bg-gray-800 border border-gray-700 max-w-[300px] mx-auto">
+        <div className="h-6 bg-gray-900 flex items-center justify-center">
+          <div className="w-16 h-1 bg-gray-700 rounded-full"></div>
+        </div>
+        <div className="p-1">
+          <div className="aspect-[9/16] relative">{children}</div>
+        </div>
+        <div className="h-8 bg-gray-900 flex items-center justify-center">
+          <div className="w-8 h-8 rounded-full border-2 border-gray-700"></div>
+        </div>
+      </div>
+    );
+  } else {
+    return <>{children}</>;
+  }
+};
 
 interface ProjectCardProps {
   title: string;
@@ -113,27 +119,13 @@ export default function ProjectCard({
             window.open(currentScreenshot.url, "_blank");
           }}
         >
-          {currentScreenshot.type === "web" ? (
-            <BrowserFrame>
-              <div className="aspect-video relative cursor-pointer">
-                <img
-                  src={currentScreenshot.url || "/placeholder.svg"}
-                  alt={`Project screenshot ${currentImageIndex + 1}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </BrowserFrame>
-          ) : (
-            <MobileFrame>
-              <div className="aspect-[9/16] relative">
-                <img
-                  src={currentScreenshot.url || "/placeholder.svg"}
-                  alt={`Project screenshot ${currentImageIndex + 1}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </MobileFrame>
-          )}
+          <Frame type={currentScreenshot.type}>
+            <img
+              src={currentScreenshot.url || "/placeholder.svg"}
+              alt={`Project screenshot ${currentImageIndex + 1}`}
+              className="w-full h-full object-cover"
+            />
+          </Frame>
           <div className="absolute inset-0 flex items-center justify-between p-4">
             <Button
               variant="secondary"
