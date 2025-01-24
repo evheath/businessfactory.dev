@@ -44,6 +44,14 @@ const Page = () => {
           developer left you high and dry, I can help you pick up the pieces and
           train new employees.
         </p>
+        <p className="text-gray-300 text-lg mt-2">
+          My dev career started in 2018 while I was working at Cisco. I caught
+          the coding fever and decided to enroll in a fullstack web dev
+          bootcamp. Since then I have been working freelance but also found time
+          to earn a BS in Computer Science from the University of Wisconsin -
+          Madison. I am open to all sorts of work including full-time,
+          part-time, and contract.
+        </p>
       </div>
       <div className="flex items-center mt-4 space-x-2">
         <SVGButton
@@ -58,11 +66,6 @@ const Page = () => {
       </div>
       <div className="mt-12 max-w-3xl space-y-1">
         <p className="text-gray-200 text-3xl">My Tech Stack</p>
-        <p className="text-gray-300 text-lg">
-          Not all technologies are created equal. You can view a full list my
-          technical experience further below, but right here are my strongest
-          skills.
-        </p>
         <div className="text-gray-200  flex items-center space-x-2">
           <p className="w-20">Language:</p>
           <SVGButton>
