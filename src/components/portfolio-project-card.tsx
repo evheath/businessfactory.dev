@@ -36,7 +36,7 @@ const Frame = ({
           </div>
         </div>
         <div className="p-1">
-          <div className="aspect-video relative cursor-pointer">{children}</div>
+          <div className=" relative">{children}</div>
         </div>
       </div>
     );

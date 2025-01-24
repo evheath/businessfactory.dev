@@ -128,7 +128,7 @@ const Page = () => {
           </li>
           <li>
             APIs: twilio, sendgrid, shopify, bigcommerce, shippo, fedex,
-            ethereal.email, outlook
+            ethereal.email, outlook, clerk
           </li>
           <li>
             Packages: prisma, trpc, zod, date-fns, lodash, moment, turborepo,

@@ -5,9 +5,9 @@ const Page = () => {
       <h1 className="text-white text-5xl font-medium font-sans">
         My Portfolio
       </h1>
-      <div className="my-4" />
+      <div className="my-8" />
       <ProjectCard
-        title="Black and White"
+        title="B&W"
         technologies={[
           "React",
           "Next.js",
@@ -40,6 +40,47 @@ const Page = () => {
           },
         ]}
         description="A TurboTax-like web app to help an accountant manage her clients. Allows for easy data entry and file sharing. Some notable features include passwordless authentication, email notifications, and role-based access control."
+      />
+
+      <div className="my-8" />
+      <ProjectCard
+        title="LMB"
+        technologies={[
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind",
+          "PostgreSQL",
+          "Prisma",
+          "Supabase",
+          "React Query",
+          "React Table",
+          "tRPC",
+          "Clerk",
+        ]}
+        screenshots={[
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3PgGGStdMNZnHhL2RuaVrSzg74XilGwmTI9y8",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3oXqAG0Qc6ZoznOmRSL5qwY0BEtCNeKgJ2xAy",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc36jRkmsZJilPex9gN8w2YE31Kmf70MGFpdOWh",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3u502OSkxjFUVdMbtwrXSIcyRDfPnQGLzqT20",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3VeH0RCwGEMl0AhmbpdrWOHDsqKQ5xaIoi6zR",
+            type: "web",
+          },
+        ]}
+        description="A web dashboard for a small med-spa. Some notable features include tracking client's treatments and services, realtime chat, and a trouble-ticket system."
       />
     </div>
   );
