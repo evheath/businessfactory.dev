@@ -53,7 +53,7 @@ const Page = () => {
           part-time, and contract.
         </p>
       </div>
-      <div className="flex items-center mt-4 space-x-2">
+      <div className="flex items-center justify-around lg:justify-normal mt-4 lg:space-x-12 ">
         <SVGButton
           href="https://www.linkedin.com/in/elliotheath/"
           label="LinkedIn"
