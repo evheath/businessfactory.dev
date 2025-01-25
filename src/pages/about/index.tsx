@@ -14,8 +14,8 @@ import { SVGButton } from "@/components/SVGButton";
 const Page = () => {
   const yearsExperience = new Date().getFullYear() - 2018;
   return (
-    <div className="m-2 lg:m-24">
-      <div className="sm:flex items-center space-x-3">
+    <div className="m-2 lg:m-24 max-w-3xl lg:mx-auto">
+      <div className="flex flex-col sm:flex-row items-center space-x-3">
         <Image
           className="h-36 w-36 rounded-full"
           src={
@@ -29,7 +29,7 @@ const Page = () => {
           I'm Elliot Heath. I live in Madison, Wisconsin where I make apps.
         </p>
       </div>
-      <div className="mt-6 max-w-3xl">
+      <div className="mt-6 ">
         <p className="text-gray-300 text-lg">
           For the last {yearsExperience} years, I have been building bespoke
           apps for small businesses. There is nothing more satisfying than
