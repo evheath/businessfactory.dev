@@ -64,9 +64,9 @@ const Page = () => {
           <GitHub />
         </SVGButton>
       </div>
-      <div className="mt-12 max-w-3xl space-y-1 mx-4 desktop:mx-0">
+      <div className="mt-12 max-w-3xl space-y-1 m-4 desktop:m-0">
         <p className="text-gray-200 text-3xl text-center">My Tech Stack</p>
-        <div className="text-gray-200  flex items-center space-x-2">
+        <div className="text-gray-200 flex items-center space-x-2">
           <p className="ipad:w-20 hidden desktop:block">Language:</p>
           <SVGButton>
             <TypescriptIcon />
@@ -74,7 +74,7 @@ const Page = () => {
           <p className="font-semibold">TypeScript</p>
           <p className="hidden ipad:block">- Javascript, but better.</p>
         </div>
-        <div className="text-gray-200  flex items-center space-x-2">
+        <div className="text-gray-200 flex items-center space-x-2">
           <p className="ipad:w-20 hidden desktop:block">Frontend:</p>
           <SVGButton>
             <ReactIcon />
@@ -84,8 +84,8 @@ const Page = () => {
             - Well documented, works for mobile, and supports TypeScript.
           </p>
         </div>
-        <div className="text-gray-200  flex items-center space-x-2">
-          <p className="ipad:w-20">Backend:</p>
+        <div className="text-gray-200 flex items-center space-x-2">
+          <p className="ipad:w-20 hidden desktop:block">Backend:</p>
           <SVGButton>
             <NextIcon />
           </SVGButton>
@@ -95,8 +95,8 @@ const Page = () => {
             needed.
           </p>
         </div>
-        <div className="text-gray-200  flex items-center space-x-2">
-          <p className="ipad:w-20">Styling:</p>
+        <div className="text-gray-200 flex items-center space-x-2">
+          <p className="ipad:w-20 hidden desktop:block">Styling:</p>
           <SVGButton>
             <TailwindIcon />
           </SVGButton>
@@ -106,8 +106,8 @@ const Page = () => {
             😂
           </p>
         </div>
-        <div className="text-gray-200  flex items-center space-x-2">
-          <p className="ipad:w-20">Database:</p>
+        <div className="text-gray-200 flex items-center space-x-2">
+          <p className="ipad:w-20 hidden desktop:block">Database:</p>
           <SVGButton>
             <PostgreSQL />
           </SVGButton>
@@ -118,7 +118,9 @@ const Page = () => {
         </div>
       </div>
       <div className="mt-12 max-w-3xl space-y-1">
-        <h3 className="text-gray-200 text-3xl">Technical Experience</h3>
+        <h3 className="text-gray-200 text-3xl text-center">
+          Technical Experience
+        </h3>
         <p className="text-gray-300 text-lg">
           In addition to my preferred tech stack, here are the technologies I
           have experience with:
