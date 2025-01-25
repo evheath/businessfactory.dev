@@ -125,26 +125,54 @@ const Page = () => {
           In addition to my preferred tech stack, here are the technologies I
           have experience with:
         </p>
-        <ul className="text-gray-200 list-disc list-inside">
-          <li>Frontend: vue, angular, jquery </li>
-          <li>Styling: css, bootstrap, scss, sass</li>
-          <li>Backend: express, symfony, rails</li>
-          <li>Languages: javascript, ruby, php, html, dart, java</li>
-          <li>Databases: mongodb, mysql, sqlite, firebase realtime</li>
-          <li>Mobile: react native, flutter</li>
+        <ul className="text-gray-200 list-disc list-outside pl-4">
           <li>
-            Platforms: vercel, supabase, firebase, aws, heroku, planetscale
+            <span className="hidden ipad:inline font-semibold">Frontend: </span>
+            vue, angular, jquery
           </li>
           <li>
-            APIs: twilio, sendgrid, shopify, bigcommerce, shippo, fedex,
+            <span className="hidden ipad:inline font-semibold">Styling: </span>
+            css, bootstrap, scss, sass
+          </li>
+          <li>
+            <span className="hidden ipad:inline font-semibold">Backend: </span>
+            express, symfony, rails
+          </li>
+          <li>
+            <span className="hidden ipad:inline font-semibold">
+              Languages:{" "}
+            </span>
+            javascript, ruby, php, html, dart, java
+          </li>
+          <li>
+            <span className="hidden ipad:inline font-semibold">
+              Databases:{" "}
+            </span>
+            mongodb, mysql, sqlite, firebase realtime
+          </li>
+          <li>
+            <span className="hidden ipad:inline font-semibold">Mobile: </span>
+            react native, flutter
+          </li>
+          <li>
+            <span className="hidden ipad:inline font-semibold">
+              Platforms:{" "}
+            </span>
+            vercel, supabase, firebase, aws, heroku, planetscale
+          </li>
+          <li>
+            <span className="hidden ipad:inline font-semibold">APIs: </span>
+            twilio, sendgrid, shopify, bigcommerce, shippo, fedex,
             ethereal.email, outlook, clerk
           </li>
           <li>
-            Packages: prisma, trpc, zod, date-fns, lodash, moment, turborepo,
-            jasmine, pdf-lib
+            <span className="hidden ipad:inline font-semibold">Packages: </span>
+            prisma, trpc, zod, date-fns, lodash, moment, turborepo, jasmine,
+            pdf-lib
           </li>
           <li>
-            Tools: git, postman, trello, figma, slack, docker, vite, vscode
+            <span className="hidden ipad:inline font-semibold">Tools: </span>
+            git, postman, trello, figma, slack, docker, vite, vscode
           </li>
         </ul>
       </div>
