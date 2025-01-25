@@ -14,8 +14,8 @@ import { SVGButton } from "@/components/SVGButton";
 const Page = () => {
   const yearsExperience = new Date().getFullYear() - 2018;
   return (
-    <div className="m-2 lg:m-24 max-w-3xl lg:mx-auto">
-      <div className="flex flex-col sm:flex-row items-center space-x-3">
+    <div className="m-2 desktop:m-24 max-w-3xl desktop:mx-auto">
+      <div className="flex flex-col ipad:flex-row items-center space-x-3">
         <Image
           className="h-36 w-36 rounded-full"
           src={
@@ -53,7 +53,7 @@ const Page = () => {
           part-time, and contract.
         </p>
       </div>
-      <div className="flex items-center justify-around lg:justify-normal mt-4 lg:space-x-12 ">
+      <div className="flex items-center justify-around  mt-4 desktop:space-x-12 ">
         <SVGButton
           href="https://www.linkedin.com/in/elliotheath/"
           label="LinkedIn"
@@ -64,53 +64,57 @@ const Page = () => {
           <GitHub />
         </SVGButton>
       </div>
-      <div className="mt-12 max-w-3xl space-y-1">
-        <p className="text-gray-200 text-3xl">My Tech Stack</p>
+      <div className="mt-12 max-w-3xl space-y-1 mx-4 desktop:mx-0">
+        <p className="text-gray-200 text-3xl text-center">My Tech Stack</p>
         <div className="text-gray-200  flex items-center space-x-2">
-          <p className="w-20">Language:</p>
+          <p className="ipad:w-20 hidden desktop:block">Language:</p>
           <SVGButton>
             <TypescriptIcon />
           </SVGButton>
           <p className="font-semibold">TypeScript</p>
-          <p>- Javascript, but better.</p>
+          <p className="hidden ipad:block">- Javascript, but better.</p>
         </div>
         <div className="text-gray-200  flex items-center space-x-2">
-          <p className="w-20">Frontend:</p>
+          <p className="ipad:w-20 hidden desktop:block">Frontend:</p>
           <SVGButton>
             <ReactIcon />
           </SVGButton>
           <p className="font-semibold">React</p>
-          <p>- Well documented, works for mobile, and supports TypeScript.</p>
+          <p className="hidden ipad:block">
+            - Well documented, works for mobile, and supports TypeScript.
+          </p>
         </div>
         <div className="text-gray-200  flex items-center space-x-2">
-          <p className="w-20">Backend:</p>
+          <p className="ipad:w-20">Backend:</p>
           <SVGButton>
             <NextIcon />
           </SVGButton>
           <p className="font-semibold">Next.js</p>
-          <p>
+          <p className="hidden ipad:block">
             - The easiest way to go serverless but can still be self-hosted if
             needed.
           </p>
         </div>
         <div className="text-gray-200  flex items-center space-x-2">
-          <p className="w-20">Styling:</p>
+          <p className="ipad:w-20">Styling:</p>
           <SVGButton>
             <TailwindIcon />
           </SVGButton>
           <p className="font-semibold">Tailwind</p>
-          <p>
+          <p className="hidden ipad:block">
             - If I don't use tailwind I have to Google flexbox syntax every time
             😂
           </p>
         </div>
         <div className="text-gray-200  flex items-center space-x-2">
-          <p className="w-20">Database:</p>
+          <p className="ipad:w-20">Database:</p>
           <SVGButton>
             <PostgreSQL />
           </SVGButton>
           <p className="font-semibold">PostgreSQL</p>
-          <p>- If it ain't broke...it's probably not mongo</p>
+          <p className="hidden ipad:block">
+            - If it ain't broke...it's probably not mongo
+          </p>
         </div>
       </div>
       <div className="mt-12 max-w-3xl space-y-1">
