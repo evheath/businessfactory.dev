@@ -108,28 +108,28 @@ export function Header() {
   return (
     <header className="py-1">
       <nav className="relative z-50 flex justify-between">
-        <div className="flex items-center md:gap-x-12">
+        <div className="flex items-center lg:gap-x-12">
           <Link
-            className="group flex flex-col md:flex-row items-center h-24"
+            className="group flex flex-col lg:flex-row items-center h-24"
             href="/"
             aria-label="Home"
           >
-            <Logo className="md:h-full" />
-            <Brand className="mt-1 md:h-12 md:ml-2" />
+            <Logo className="lg:h-full" />
+            <Brand className="mt-1 lg:h-12 lg:ml-2" />
           </Link>
-          <div className="hidden md:flex md:gap-x-6 hover:scale-125">
+          <div className="hidden lg:flex lg:gap-x-6 hover:scale-125">
             <NavLink href="/about">About</NavLink>
           </div>
-          <div className="hidden md:flex md:gap-x-6 hover:scale-125">
+          <div className="hidden lg:flex lg:gap-x-6 hover:scale-125">
             <NavLink href="/portfolio">Portfolio</NavLink>
           </div>
-          <div className="hidden md:flex md:gap-x-6 hover:scale-125">
+          <div className="hidden lg:flex lg:gap-x-6 hover:scale-125">
             <NavLink href="/blog">Blog</NavLink>
           </div>
         </div>
-        <div className="flex items-center gap-x-5 md:gap-x-8">
+        <div className="flex items-center gap-x-5 lg:gap-x-8">
           <Button href="/contact">Contact me</Button>
-          <div className="-mr-1 md:hidden">
+          <div className="-mr-1 lg:hidden">
             <MobileNavigation />
           </div>
         </div>
