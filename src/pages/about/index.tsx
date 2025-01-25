@@ -14,7 +14,7 @@ import { SVGButton } from "@/components/SVGButton";
 const Page = () => {
   const yearsExperience = new Date().getFullYear() - 2018;
   return (
-    <div className="m-24">
+    <div className="m-2 lg:m-24">
       <div className="sm:flex items-center space-x-3">
         <Image
           className="h-36 w-36 rounded-full"
