@@ -8,7 +8,7 @@ export default function BlogListPage({
   return (
     <>
       {/* <h1>Welcome to the Blog</h1> */}
-      <div className="my-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-7xl">
+      <div className="my-12 max-w-lg mx-2 ipad:mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-7xl">
         {allPostsMetaData.map((post, index) => {
           return (
             <Link
@@ -18,7 +18,7 @@ export default function BlogListPage({
             >
               <div className="flex-shrink-0">
                 <Image
-                  className="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover hidden ipad:block"
                   src={post.heroImgUrl}
                   alt={post.title}
                   priority={index < 3} // first three images should not be lazy loaded
