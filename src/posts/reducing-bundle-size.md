@@ -2,11 +2,8 @@
 title: "Reducing client JavaScript bundle size with Next.js"
 description: "Next.js use case: making your app faster by reducing the size of your JavaScript bundle."
 date: "2022-06-29"
-author: "Elliot Heath"
-slug: "reducing-bundle-size"
-authorImgUrl: https://firebasestorage.googleapis.com/v0/b/business-factory-30cbd.appspot.com/o/profile.jpg?alt=media&token=fd885feb-73c5-4e85-962b-eed81edff527
 heroImgUrl: https://firebasestorage.googleapis.com/v0/b/business-factory-30cbd.appspot.com/o/nextjs-2885206612.png?alt=media&token=2c688710-aa88-4182-b515-4e61c7260ecc
-technologies: ["Next.js", "React", "JavaScript"]
+technologies: ["Next.js", "React", "TypeScript"]
 ---
 
 I'm [building a silly browser game](https://dallehangman.com/) and my JavaScript bundle **quadrupled** in size with the inclusion of a single package

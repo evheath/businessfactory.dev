@@ -18,10 +18,7 @@ export function getAllPostSlugs() {
 interface PostMetaData {
   date: string;
   title: string;
-  slug: string;
   description: string;
-  author: string;
-  authorImgUrl: string;
   heroImgUrl: string;
   technologies: string[];
 }
@@ -36,10 +33,14 @@ export function getPostMetaData(slug: string) {
   return getMatterResult(slug).data as PostMetaData;
 }
 
-export function getAllPostsMetaData(): PostMetaData[] {
+export function getAllPostsMetaData() {
   const allSlugs = getAllPostSlugs();
   const allPostsData = allSlugs.map((slug) => {
-    return getPostMetaData(slug.params.slug);
+    const metadata = getPostMetaData(slug.params.slug);
+    return {
+      ...metadata,
+      slug: slug.params.slug,
+    };
   });
   // Sort posts by date
   return allPostsData.sort((a, b) => {
