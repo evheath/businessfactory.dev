@@ -6,6 +6,7 @@ const nextConfig = {
       { hostname: "firebasestorage.googleapis.com" },
       { hostname: "tailwindui.com" },
       { hostname: "images.unsplash.com" },
+      { hostname: "o8jsjsxk9g.ufs.sh" },
     ],
   },
 };

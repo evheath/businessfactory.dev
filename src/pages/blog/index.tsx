@@ -2,6 +2,7 @@ import { InferGetStaticPropsType } from "next";
 import { getAllPostsMetaData } from "@/utils/posts";
 import Link from "next/link";
 import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
 export default function BlogListPage({
   allPostsMetaData,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -31,6 +32,18 @@ export default function BlogListPage({
                   <p className="text-xl font-semibold text-white">
                     {post.title}
                   </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {post.technologies.map((tech) => (
+                      <Badge
+                        key={tech}
+                        variant="outline"
+                        className="bg-gray-800 text-gray-200"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+
                   <p className="mt-3 text-base text-gray-500">
                     {post.description}
                   </p>
