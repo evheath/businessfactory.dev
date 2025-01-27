@@ -6,15 +6,15 @@ heroImgUrl: https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc37ZmoKsQjKyp7WizfuerN4wJadgCI
 technologies: ["Next.js", "React", "TypeScript", "Zustand"]
 ---
 
-In traditional single-page React applications, fetching data--e.g. API calls, database queries, images, etc--was handled client-side _after_ receiving the HTML, CSS, and JavaScript from the web server. Essentially, a web server was passing kilobytes (possibly even megabytes 🤢) of instructions to your device on how to acquire and display the data you want, but notably not the data itself.
+In traditional single-page React applications, fetching data--e.g. API calls, authentication checks, database queries, etc--was handled client-side _after_ receiving the HTML, CSS, and JavaScript from the web server. Essentially, a web server was passing kilobytes (possibly even megabytes 🤢) of instructions to your device on how to acquire and display the data you want, but notably not the data itself.
 
-<!-- TODO: excalidraw of traditional data flow -->
+![The traditional data flow](https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3IIx88kP8Dm39btMjNTIVcKdgaCsh67qLEyHk)
 
 Now if you are inclined to think of the HTML, CSS, and JavaScript _as_ data, you might be wondering "Why am I getting data on how to get data, and not just the damn data 🤔?" For years, developers have been solving questions of data fetching, caching, and revalidation at the expense of the end user experience vis-à-vis increased JavaScript bundle sizes and longer time to interactive (TTI) on their devices.
 
 Vercel, the company behind Next.js, hopes to change this paradigm with [Server Components](https://nextjs.org/docs/basic-features/data-fetching#server-components). Their big idea is that now the server handles the data fetching at time of the client's request. Meaning, data arrives pre-fetched at the client along with the HTML, CSS, and any JavaScript needed to display it; the end result is a faster time to interactive (TTI) and a smaller JavaScript bundle size.
 
-<!-- TODO: excalidraw of new data flow -->
+![Data arrives at the client pre-fetched with the server component data flow.](https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3TP0ycJmn28VI5eDG6SmKqWAZwhyUtdPY1HMg)
 
 No need to throw the baby out with the bath water, however. The lessons learned from robust client-side data fetching libraries like [React Query](https://react-query.tanstack.com/) can still be applied to Server Components. For example, if data from one query is needed in multiple components, it would be wasteful to fetch the data multiple times. This can be naively accomplished by fetching the data once and then passing the data as a prop to any needy child components. However, there are two problems with this approach: 1) the prop drilling will become difficult to maintain as the component tree grows in complexity, and 2) some server components cannot pass props to one another (e.g. a layout component and a page component).
 
