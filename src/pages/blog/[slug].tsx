@@ -15,7 +15,7 @@ export default function BlogPostPage({
   content,
   metaData,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const { title, date, author, description } = metaData;
+  const { title, date, description } = metaData;
   return (
     <>
       <Head>
@@ -31,12 +31,14 @@ export default function BlogPostPage({
               <div className="text-base text-gray-500 font-semibold tracking-wide flex items-center space-x-4 ">
                 <Image
                   className="h-10 w-10 rounded-full"
-                  src={metaData.authorImgUrl}
-                  alt={metaData.author}
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/business-factory-30cbd.appspot.com/o/profile.jpg?alt=media&token=fd885feb-73c5-4e85-962b-eed81edff527"
+                  }
+                  alt="Elliot Heath"
                   height={40}
                   width={40}
                 />
-                <p>{author}</p>
+                <p>Elliot Heath</p>
               </div>
               <p className="text-gray-500">{date}</p>
             </div>
