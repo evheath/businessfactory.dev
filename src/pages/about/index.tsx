@@ -122,8 +122,8 @@ const Page = () => {
           Technical Experience
         </h3>
         <p className="text-gray-300 text-lg">
-          In addition to my preferred tech stack, here are the technologies I
-          have experience with:
+          In addition to my preferred tech stack, here are the other
+          technologies I have experience with:
         </p>
         <ul className="text-gray-200 list-disc list-outside pl-4">
           <li>
@@ -142,7 +142,7 @@ const Page = () => {
             <span className="hidden ipad:inline font-semibold">
               Languages:{" "}
             </span>
-            javascript, ruby, php, html, dart, java
+            javascript, go, ruby, php, html, dart, java
           </li>
           <li>
             <span className="hidden ipad:inline font-semibold">
