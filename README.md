@@ -1,9 +1,3 @@
-# TODO
+# [businessfactory.dev](https://businessfactory.dev)
 
-- [ ] about page
-  - [x] social media links
-  - [x] skills
-  - [?] work history
-  - [?] education/qualifications
-- [ ] portfolio
-- [ ] a new blog post
+A Next.js web app that acts as my marketing and portfolio site.
