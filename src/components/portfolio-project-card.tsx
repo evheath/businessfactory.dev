@@ -11,6 +11,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image"
 
 type ScreenshotType = "web" | "mobile" | "none";
 
@@ -120,10 +121,15 @@ export default function ProjectCard({
           }}
         >
           <Frame type={currentScreenshot.type}>
-            <img
+            <Image
               src={currentScreenshot.url || "/placeholder.svg"}
               alt={`Project screenshot ${currentImageIndex + 1}`}
-              className="w-full h-full object-cover"
+              className="object-cover rounded"
+              placeholder="blur"
+              blurDataURL="/placeholder.svg"
+              priority={currentImageIndex === 0}
+              width={1280}
+              height={720}
             />
           </Frame>
           <div className="absolute inset-0 flex items-center justify-between p-4">
@@ -156,9 +162,8 @@ export default function ProjectCard({
             {screenshots.map((_, index) => (
               <div
                 key={index}
-                className={`w-2 h-2 rounded-full ${
-                  index === currentImageIndex ? "bg-gray-200" : "bg-gray-600"
-                }`}
+                className={`w-2 h-2 rounded-full ${index === currentImageIndex ? "bg-gray-200" : "bg-gray-600"
+                  }`}
               />
             ))}
           </div>
