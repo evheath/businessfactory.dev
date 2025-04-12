@@ -85,14 +85,20 @@ const Page = () => {
       <div className="my-8" />
       <ProjectCard
         title="DALL-E Hangman"
+        url="https://dallehangman.com"
+        repo="https://github.com/evheath/dalle-hangman"
         technologies={[
           "Angular",
           "TypeScript",
-          "Tailwind",
+          "RXJS",
           "Firebase",
           "Firestore",
+          "Tailwind",
           "MaterialUI",
           "OpenAI",
+          "DALL-E",
+          "Craiyon",
+          "Dice Bear",
         ]}
         screenshots={[
           {
