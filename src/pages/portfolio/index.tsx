@@ -60,7 +60,7 @@ const Page = () => {
         ]}
         screenshots={[
           {
-            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3PgGGStdMNZnHhL2RuaVrSzg74XilGwmTI9y8",
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3Bb6Q8CV0Of2YukCVsz6SM3vZAL8RJ7ecDgxX",
             type: "web",
           },
           {
