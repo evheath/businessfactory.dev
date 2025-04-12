@@ -84,6 +84,30 @@ const Page = () => {
       />
       <div className="my-8" />
       <ProjectCard
+        title="DALL-E Hangman"
+        technologies={[
+          "Angular",
+          "TypeScript",
+          "Tailwind",
+          "Firebase",
+          "Firestore",
+          "MaterialUI",
+          "OpenAI",
+        ]}
+        screenshots={[
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3DGHau5nTRKfeUYqwXrB1AgzyH4J6ONIknCsa",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3uyh8G5kxjFUVdMbtwrXSIcyRDfPnQGLzqT20",
+            type: "web",
+          },
+        ]}
+        description="A web game where users guess the phrase that was used to create AI-generated images"
+      />
+      <div className="my-8" />
+      <ProjectCard
         title="SDC"
         technologies={[
           "HTML",
