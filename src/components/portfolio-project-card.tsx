@@ -73,8 +73,8 @@ export default function ProjectCard({
   description,
 }: {
   title: string;
-  url: string;
-  repo: string;
+  url?: string;
+  repo?: string;
   technologies: string[];
   screenshots: Screenshot[];
   description: string;
