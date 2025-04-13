@@ -14,20 +14,20 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image"
 import { IconLink } from "./icon-link";
 
-type ScreenshotType = "web" | "mobile" | "none";
+type FrameType = "web" | "mobile" | "none";
 
 interface Screenshot {
   url: string;
-  type: ScreenshotType;
+  frameType: FrameType;
 }
 const Frame = ({
   children,
-  type,
+  frameType,
 }: {
   children: React.ReactNode;
-  type: ScreenshotType;
+  frameType: FrameType;
 }) => {
-  switch (type) {
+  switch (frameType) {
     case "web":
       return (
         <div className="rounded-lg overflow-hidden bg-gray-800 border border-gray-700 h-full w-full">
@@ -126,7 +126,7 @@ export default function ProjectCard({
             window.open(currentScreenshot.url, "_blank");
           }}
         >
-          <Frame type={currentScreenshot.type}>
+          <Frame frameType={currentScreenshot.frameType}>
             <Image
               src={currentScreenshot.url || "/placeholder.svg"}
               alt={`Project screenshot ${currentImageIndex + 1}`}
