@@ -148,6 +148,69 @@ const Page = () => {
       />
       <div className="my-8" />
       <ProjectCard
+        title="Chessbots"
+        url="https://apkcombo.com/chess-bots/com.chessbots.mobile/"
+        repo="https://github.com/evheath/chessbots-flutter"
+        technologies={[
+          "Flutter",
+          "Android",
+          "iOS",
+          "Dart",
+          "RXDart",
+          "Firebase",
+          "Firestore",
+          "Crashlytics",
+          "MaterialUI",
+          "Google Play",
+          "TestFlight",
+          "Fastlane",
+        ]}
+        screenshots={[
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3wBc0BNWEC53iFNTVDZo7pylu60YrG9Q8qhKm",
+            type: "mobile",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3cs7Bc4bNs7GDua9eRjCTFmZ4LtMxUiX1crNK",
+            type: "mobile",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3eCvSfRuOZBwS4FrA1GinMKYH6hqVQREpW8tT",
+            type: "mobile",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3tMNAEf8kdyevDmi6CuE0LpZQ9xJT3b1go2Al",
+            type: "mobile",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3N7eEeiPXaSrYwxLb3fK6g2jziy450WVAeIOP",
+            type: "mobile",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3tDVg9t8kdyevDmi6CuE0LpZQ9xJT3b1go2Al",
+            type: "mobile",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3vt3YLbEQTksKBVep7nZ0AbjP9NR1mIxJfig2",
+            type: "mobile",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3NEiTGwXaSrYwxLb3fK6g2jziy450WVAeIOPF",
+            type: "mobile",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3oPa8RVc6ZoznOmRSL5qwY0BEtCNeKgJ2xAyk",
+            type: "mobile",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3dYXj0FKwYoUuWvZTFzq4yt5MRQ2GLSgBKm60",
+            type: "mobile",
+          },
+        ]}
+        description="A mobile game where users build, battle, and upgrade chess bots. The more battles you win, the more sophisticated your bot can get!"
+      />
+      <div className="my-8" />
+      <ProjectCard
         title="SDC"
         technologies={[
           "HTML",
