@@ -114,6 +114,40 @@ const Page = () => {
       />
       <div className="my-8" />
       <ProjectCard
+        title="Wedding App"
+        url="https://elliotandtina.web.app"
+        repo="https://github.com/evheath/elliotandtina"
+        technologies={[
+          "Angular",
+          "TypeScript",
+          "RXJS",
+          "Firebase",
+          "Firestore",
+          "SCSS",
+          "MaterialUI",
+        ]}
+        screenshots={[
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc37NyIRBjKyp7WizfuerN4wJadgCIkEPGRt56A",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3thFDqWg8kdyevDmi6CuE0LpZQ9xJT3b1go2A",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3rnG09FIPvCa5mVWKb4HB3cJ7ysDiSUZe69hk",
+            type: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3WORQKZAtv06UuhKQHOZDsE7BGe9gF1y8AJbf",
+            type: "web",
+          },
+        ]}
+        description="A zola/knot like website for guests to RSVP, read about the venue, find lodging, and upload photos."
+      />
+      <div className="my-8" />
+      <ProjectCard
         title="SDC"
         technologies={[
           "HTML",
@@ -122,6 +156,7 @@ const Page = () => {
           "Node.js",
           "Express",
           "MongoDB",
+          "Docker",
           "Socket.io",
           "Shopify",
           "Shippo",
