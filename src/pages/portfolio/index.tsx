@@ -88,14 +88,17 @@ const Page = () => {
         technologies={[
           "React Native",
           "TypeScript",
-          "Tailwind",
-          "PostgreSQL",
-          "Prisma",
-          "Supabase",
-          "React Query",
-          "React Table",
+          "React Navigation",
+          "React Hook Form",
+          "Android",
+          "iOS",
+          "Nativewind",
           "tRPC",
           "Clerk",
+          "TestFlight",
+          "Expo",
+          "UIKitten",
+          "Sentry.io",
         ]}
         screenshots={[
           {
@@ -106,8 +109,28 @@ const Page = () => {
             url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3FyQC3Oq1dCGbsVJYgx3B7vWtHMLwmoQRucKD",
             frameType: "none",
           },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3vFRF5aEQTksKBVep7nZ0AbjP9NR1mIxJfig2",
+            frameType: "mobile"
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3a3aAghbDSl1mBp7IY2wRhknWdNsyFEJVgei6",
+            frameType: "mobile"
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc37yVCNTjKyp7WizfuerN4wJadgCIkEPGRt56A",
+            frameType: "none"
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3q7nqyoDajHVrOtZB2cLuv6A7fwMxb3KXQeNG",
+            frameType: "mobile"
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3N9vOKiXaSrYwxLb3fK6g2jziy450WVAeIOPF",
+            frameType: "none"
+          },
         ]}
-        description="Same med spa, but this is the accompanying mobile app for their clients"
+        description="Same med spa, but this is the accompanying mobile app for their clients. Notable features include realtime chat, secure image upload, a treatment calendar, and push notifications."
       />
       <div className="my-8" />
       <ProjectCard
