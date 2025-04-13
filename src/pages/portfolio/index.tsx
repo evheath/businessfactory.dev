@@ -44,7 +44,7 @@ const Page = () => {
 
       <div className="my-8" />
       <ProjectCard
-        title="LMB"
+        title="LMB, web"
         technologies={[
           "React",
           "Next.js",
@@ -80,7 +80,34 @@ const Page = () => {
             type: "web",
           },
         ]}
-        description="A web dashboard for a small med-spa. Some notable features include tracking client's treatments and services, realtime chat, and a trouble-ticket system."
+        description="A web dashboard made for employees of a med-spa. Some notable features include tracking client's treatments and services, realtime chat, and a trouble-ticket system."
+      />
+      <div className="my-8" />
+      <ProjectCard
+        title="LMB, mobile"
+        technologies={[
+          "React Native",
+          "TypeScript",
+          "Tailwind",
+          "PostgreSQL",
+          "Prisma",
+          "Supabase",
+          "React Query",
+          "React Table",
+          "tRPC",
+          "Clerk",
+        ]}
+        screenshots={[
+          // {
+          //   url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3qeBvTLKDajHVrOtZB2cLuv6A7fwMxb3KXQeN",
+          //   type: "mobile",
+          // },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3FyQC3Oq1dCGbsVJYgx3B7vWtHMLwmoQRucKD",
+            type: "none",
+          },
+        ]}
+        description="Same med spa, but this is the accompanying mobile app for their clients"
       />
       <div className="my-8" />
       <ProjectCard
