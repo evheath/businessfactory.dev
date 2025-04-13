@@ -130,7 +130,7 @@ const Page = () => {
             frameType: "none"
           },
         ]}
-        description="Same med spa, but this is the accompanying mobile app for their clients. Notable features include realtime chat, secure image upload, a treatment calendar, and push notifications."
+        description="The same med spa as above, but this is the accompanying mobile app for their clients. Notable features include text/image chat, over-the-air updates, a treatment calendar, and push notifications."
       />
       <div className="my-8" />
       <ProjectCard
