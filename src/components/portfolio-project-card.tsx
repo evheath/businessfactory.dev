@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image"
 import { IconLink } from "./icon-link";
+import { cn } from "@/lib/utils";
 
 type FrameType = "web" | "mobile" | "none";
 
@@ -128,13 +129,14 @@ export default function ProjectCard({
         >
           <Frame frameType={currentScreenshot.frameType}>
             <Image
-              src={currentScreenshot.url || "/placeholder.svg"}
-              alt={`Project screenshot ${currentImageIndex + 1}`}
-              className="object-scale-down rounded h-full w-full"
+              src={currentScreenshot.url}
+              alt="screenshot"
+              className={cn("object-scale-down rounded h-full w-full")}
               placeholder="blur"
-              blurDataURL="/placeholder.svg"
+              blurDataURL="/loading.gif"
               priority={currentImageIndex === 0}
               fill
+              sizes="560px"
             />
           </Frame>
           <div className="absolute inset-0 flex items-center justify-between p-4">
