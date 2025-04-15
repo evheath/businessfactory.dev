@@ -92,7 +92,9 @@ export default function ProjectCard({
       </CardHeader>
       <CardContent>
 
-        <Carousel>
+        <Carousel opts={{
+          loop: true,
+        }}>
           <CarouselContent>
             {screenshots.map((screenshot) => (
               <CarouselItem key={screenshot.url}>
