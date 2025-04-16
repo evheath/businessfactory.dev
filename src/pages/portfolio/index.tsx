@@ -141,7 +141,7 @@ const Page = () => {
         technologies={[
           "Angular",
           "TypeScript",
-          "RXJS",
+          "RxJS",
           "Firebase",
           "Firestore",
           "Tailwind",
@@ -171,7 +171,7 @@ const Page = () => {
         technologies={[
           "Angular",
           "TypeScript",
-          "RXJS",
+          "RxJS",
           "Firebase",
           "Firestore",
           "SCSS",
@@ -301,6 +301,32 @@ const Page = () => {
           },
         ]}
         description="Inventory and order management system for a small business. Employees on the factory floor have guided instructions on how to assemble products. This was a project I was brought on to fix after the original developer left the company. The inventory hierarchy is rather complex, requiring some algorithms I learned in college."
+      />
+      <div className="my-8" />
+      <ProjectCard
+        title="Civfinder"
+        repo="https://github.com/evheath/civfinder"
+        url="https://civfinder.com/"
+        technologies={[
+          "Angular",
+          "Typescript",
+          "RxJS",
+          "Ngx Graph",
+          "Firebase",
+          "SCSS",
+          "Material UI",
+        ]}
+        screenshots={[
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3mQ24XMawjTh8KDAPJnC9eBuiNz7IXqRfdlLQ",
+            frameType: "web",
+          },
+          {
+            url: "https://o8jsjsxk9g.ufs.sh/f/Y3NBzhpqodc3jsqKZS6JrV6YeXMTZEj9DCwqpNWbAGIyQo7S",
+            frameType: "web",
+          },
+        ]}
+        description="A fun, Age of Empires II inspired web app. Find which AoE2 civilization has your desired units and technologies. I built this after studying graph theory during my CS degree."
       />
     </div>
   );
